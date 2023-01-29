@@ -1,0 +1,584 @@
+// .style {
+//     &-large {
+//         height: 100vh;
+//         @include respond(md){
+//             height: 860px;
+
+//         }
+//         &-normal {
+//             height: 150vh;
+//             @include respond(sm){
+//                 width: 80%;
+
+//             }
+//         }
+//     }
+// }
+
+.nav-top {
+    display: flex;
+    width: 1020px;
+    justify-content: space-between;
+    top: $larger-sizing;
+    line-height: $small-sizing;
+    align-items: center;
+    color: $header-color;
+    font-style: normal;
+    height: calc($largest-sizing + 4px);
+
+}
+
+.nav-enquiry {
+    display: flex;
+    width: 243px;
+    height: $small-sizing;
+    left: 165px;
+    top: $larger-sizing;
+    justify-content: space-between;
+
+    p {
+        font-size: $smallest-sizing;
+        font-style: normal;
+        font-weight: 700;
+    }
+}
+
+.nav-btp {
+    display: flex;
+    width: 102px;
+    height: $Large-sizing;
+    left: 957px;
+    top: calc($larger-sizing + 1px);
+    gap: $larger-sizing - 4px;
+
+    p {
+        font-style: normal;
+        font-weight: 400;
+        font-size: $smallest-sizing;
+
+    }
+}
+
+.nav-loyalty {
+    width: 115px;
+    height: $Large-sizing;
+    left: 1157px;
+    top: calc($larger-sizing + 1px);
+    display: flex;
+    gap: $larger-sizing - 4px;
+
+    p {
+        font-size: $smallest-sizing;
+        font-weight: 400;
+    }
+
+
+}
+
+.nav-btp-loyalty {
+    display: flex;
+    width: 238px;
+    justify-content: space-between;
+    place-items: center;
+    justify-items: center;
+    position: relative;
+    left: 80px;
+}
+
+.best-tour-plan {
+    display: flex;
+    top: calc($largest-sizing + 3px);
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-main {
+    height: 120px;
+    left: 0;
+    top: calc($extralarge-sizing - 4px);
+    position: relative;
+    align-items: center;
+    display: flex;
+    width: 1440px;
+}
+
+.nav {
+    position: relative;
+}
+
+.search-button {
+    border: none;
+    cursor: pointer;
+    width: calc($extralarge-sizing + 1px);
+    height: calc($largest-sizing + 4px);
+    padding: 0px;
+
+}
+
+
+.logo-search {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 570px;
+    gap: 108px;
+}
+
+.search-input {
+    width: 350px;
+    height: calc($largest-sizing + 4px);
+    //
+    padding-left: $Large-sizing + 2px;
+    color: $header-color;
+    background-color: $main-bg-color;
+    border-radius: calc($smallest-sizing - 4px);
+    border: none;
+}
+
+.logo {
+
+    width: 177px;
+    height: $larger-sizing;
+    left: 165px;
+    top: 111px;
+
+
+}
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    align-items: center;
+    width: 208px;
+    position: relative;
+}
+
+.nav-buttom-list {
+    display: flex;
+    width: 100%;
+    position: relative;
+    top: 10px;
+
+}
+
+.nav-bottom {
+    height: 80px;
+    left: 0;
+    top: 180px;
+    background-color: $tertiary-color;
+    width: 1440px;
+    position: absolute;
+}
+
+.nav-bg {
+    background-color: $main-bg-color;
+    line-height: $small-sizing;
+    height: calc($extralarge-sizing - 4px);
+    top: 0;
+    left: 0;
+    width: 1440px;
+    position: absolute;
+}
+
+/* Style the list */
+ul.breadcrumb {
+    width: 238px;
+    height: calc($larger-sizing + 1px);
+    left: 165px;
+    top: 278px;
+    line-height: $small-sizing !important;
+    cursor: pointer;
+    // display: flex;
+    // align-items: center;
+    // justify-content: center;
+}
+
+.bread-crumb {
+    position: absolute;
+    width: 1440px;
+    height: 50px;
+    left: 0px;
+    top: 260px;
+    background-color: $main-bg-color !important;
+}
+
+/* Display list items side by side */
+ul.breadcrumb li {
+    display: inline;
+    font-size: $smallest-sizing !important;
+}
+
+/* Add a slash symbol (/) before/behind each list item */
+ul.breadcrumb li+li:before {
+
+    color: $tertiary-color !important;
+    content: "/\00a0";
+}
+
+/* Add a color to all links inside the list */
+ul.breadcrumb li a {
+    color: $tertiary-color !important;
+    text-decoration: none;
+    font-size: $smallest-sizing !important;
+    font-family: 'Mulish';
+    font-weight: 400 !important;
+
+}
+
+.hotel-wrapper {
+    @extend .wrapper;
+    height: 550px;
+    left: 0px;
+    top: 310px;
+    background-color: $main-bg-color;
+}
+
+.hotel-name {
+    display: flex;
+    justify-content: space-between;
+    width: 1102px;
+    align-items: center;
+
+}
+
+.stars {
+    width: calc($largest-sizing + 12px);
+    height: calc($smallest-sizing - 2px);
+    left: 166px;
+    top: 333px;
+
+}
+
+.hilton-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 388px;
+    height: 50px;
+
+    h3 {
+
+        font-size: $larger-sizing;
+        font-weight: 700;
+        line-height: 30px;
+        color: $header-color;
+        width: 268px;
+        height: 30px;
+
+    }
+
+    span {
+        width: 70px;
+        height: 29px;
+        left: 447px;
+        top: 351px;
+        background: #EC1F46;
+        border-radius: 3px;
+        display: flex;
+        justify-content: center;
+
+        p {
+
+            font-weight: 600;
+            font-size: $smallest-sizing;
+            line-height: 13px;
+            color: $secondary-color;
+        }
+    }
+}
+
+.half-board {
+    width: 389px;
+    height: calc($medium-sizing + 1px);
+    color: $header-color;
+    display: block;
+    top: -14px;
+    position: relative;
+
+    p {
+        font-weight: 400;
+        font-style: normal;
+        font-size: $smaller-sizing;
+        line-height: calc($medium-sizing + 1px);
+        color: $header-color;
+        position: relative;
+    }
+
+}
+
+.user-rating {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80px;
+    height: 55px;
+    background-color: $primary-color;
+    left: 1210px;
+    top: 339px;
+    border-radius: 4px;
+
+
+}
+
+.user {
+    font-style: normal;
+    font-size: calc($smallest-sizing - 2px);
+    font-weight: 600;
+    line-height: $smallest-sizing;
+    color: $secondary-color;
+}
+
+.rate {
+    width: 67px;
+    height: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    p {
+        font-size: $medium-sizing;
+        font-weight: 700;
+        line-height: 18px;
+        font-family: 'Mulish';
+    }
+}
+
+.slider {
+    display: flex;
+    justify-content: space-between;
+    width: 1098px;
+    height: 450px;
+}
+
+.view-options {
+    background-color: $tertiary-color;
+    width: 350px;
+    height: 210px;
+    border-radius: calc($smallest-sizing - 2px);
+    left: 925px;
+    top: 410px;
+}
+
+.beach {
+    width: 728px;
+    height: 450px;
+    left: 167px;
+    top: 410px;
+    background: linear-gradient(180deg, rgba(0, 122, 223, 0.48) 0%, rgba(255, 255, 255, 0.128) 100%);
+    border-radius: calc($smallest-sizing - 2px);
+}
+
+.map {
+    left: 925px;
+    top: 647px;
+
+    // background: url(.png);
+    border-radius: $smallest-sizing
+}
+
+.price-room {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+
+}
+
+.price {
+    color: $secondary-color;
+    width: 86px;
+    height: 59px;
+    left: 951px;
+    top: 439px;
+
+    p {
+        margin: 0 !important;
+        font-family: 'Nunito';
+        font-style: normal;
+        font-weight: 400;
+        font-size: $smallest-sizing;
+        line-height: $medium-sizing;
+        width: 100px;
+        height: 14px;
+        left: 951px;
+        top: 439px;
+    }
+
+    strong {
+
+        width: 85px;
+        height: 33px;
+        left: 951px;
+        top: 453px;
+        font-family: 'Nunito';
+        font-size: $larger-sizing;
+        font-weight: 800;
+        line-height: calc($largest-sizing - 3px);
+    }
+}
+
+.room {
+    color: $secondary-color;
+    width: 80px;
+    height: max-content;
+    display: flex;
+    flex-direction: column;
+
+
+
+    span {
+        p {
+            width: 100px;
+            height: 16px;
+            left: 1189px;
+            top: 443px;
+            font-family: 'Nunito';
+            font-style: normal;
+            font-weight: 400;
+            font-size: $smaller-sizing;
+            line-height: calc($medium-sizing + 2px);
+            margin: 8px;
+        }
+    }
+
+}
+
+.booking {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    width: 295px;
+    height: calc($larger-sizing + 1px);
+    color: $secondary-color;
+    align-items: center;
+    padding-top: $smallest-sizing;
+
+    h4 {
+        width: 119px;
+        height: 25px;
+        font-family: 'Nunito';
+        font-weight: 600;
+        font-size: $Large-sizing;
+        font-style: normal;
+        line-height: calc($larger-sizing + 1px);
+    }
+
+    span {
+        p {
+            width: 100px;
+            height: 25px;
+            font-family: 'Nunito';
+            font-style: normal;
+            font-weight: 600;
+            font-size: $Large-sizing;
+            line-height: calc($larger-sizing + 1px);
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+
+
+            img {
+                width: 13.31px;
+                height: 13.42px;
+
+            }
+
+        }
+    }
+}
+
+.view-other-options {
+
+
+    background-color: $primary-color;
+    border-radius: 4px;
+    width: 295px;
+    height: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin-top: calc($Large-sizing - 1px);
+
+    p {
+        a {
+            color: $secondary-color;
+            width: 127px;
+            height: calc($Large-sizing + 1px);
+            font-family: 'Nunito';
+            font-style: normal;
+            font-weight: 600;
+            font-size: $medium-sizing;
+            line-height: calc($Large-sizing + 1px);
+
+        }
+    }
+
+}
+
+.package-section {
+
+    @extend .wrapper;
+    height: 878px;
+    background-color: $main-bg-color;
+    top: 859.68px;
+}
+
+.package-contianer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.package-menu {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+
+
+
+    p {
+
+
+
+        color: $header-color;
+        font-family: 'Mulish';
+        font-style: normal;
+        font-weight: 700;
+        font-size: $medium-sizing;
+        line-height: $Large-sizing;
+
+    }
+
+
+}
+
+.package-summery {
+    width: 1110px;
+    height: 840px;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.package-offer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 200px;
+    width: 1110px;
+}
+
+.package-card {
+    width: 538px;
+    height: 200px;
+}
+
+.card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}

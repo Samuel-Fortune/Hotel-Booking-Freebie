@@ -1,0 +1,621 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,600;1,900&display=swap");
+body {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Mulish";
+  background-color: #FFFFFF;
+}
+
+a {
+  text-decoration: none;
+  color: #333333;
+}
+
+h1 {
+  font-size: 64px;
+}
+
+h2 {
+  font-size: 36px;
+}
+
+h3 {
+  font-size: 24px;
+  line-height: 30px;
+}
+
+h4 {
+  font-size: 18px;
+}
+
+h5 {
+  font-size: 14px;
+}
+
+h6 {
+  font-size: 13px;
+}
+
+p {
+  font-size: 12px;
+}
+
+ul, li {
+  list-style: none;
+  line-height: 24px;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+li {
+  font-style: normal;
+  font-family: "Mulish";
+  font-weight: 700;
+  font-size: 14px;
+}
+li a {
+  color: #FFFFFF !important;
+}
+
+.flex {
+  display: flex;
+}
+.flex.justify-between {
+  justify-content: space-between;
+  width: 100%;
+}
+.flex.item-center {
+  align-items: center;
+}
+.flex.gap {
+  gap: 18px;
+}
+
+.button {
+  border: none;
+  cursor: pointer;
+  background: none;
+}
+
+/*
+0-640px: phone
+640-768px: Tablet portrait
+768 - 1024px: Tablet landscape
+1024 - px:  small desktop styles
+$breakpoint arguments choices:
+-sm
+-md
+-lg
+-xl
+1em = 16px
+*/
+.site-wrapper {
+  width: 79%;
+  max-width: 1100px;
+  height: max-content;
+  padding: 0 0px;
+  margin: auto;
+  left: 0;
+  right: 0;
+}
+
+.wrapper, .package-section, .hotel-wrapper {
+  width: 1440px;
+  position: absolute;
+}
+
+.column-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+}
+
+.card-wrapper {
+  width: 295px;
+  height: max-content;
+  margin: auto;
+  left: 0;
+  right: 0;
+  padding: 0 0px;
+  position: relative;
+  top: 29px;
+}
+
+.nav-top {
+  display: flex;
+  width: 1020px;
+  justify-content: space-between;
+  top: 24px;
+  line-height: 13px;
+  align-items: center;
+  color: #333333;
+  font-style: normal;
+  height: 40px;
+}
+
+.nav-enquiry {
+  display: flex;
+  width: 243px;
+  height: 13px;
+  left: 165px;
+  top: 24px;
+  justify-content: space-between;
+}
+.nav-enquiry p {
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 700;
+}
+
+.nav-btp {
+  display: flex;
+  width: 102px;
+  height: 18px;
+  left: 957px;
+  top: 25px;
+  gap: 20px;
+}
+.nav-btp p {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 10px;
+}
+
+.nav-loyalty {
+  width: 115px;
+  height: 18px;
+  left: 1157px;
+  top: 25px;
+  display: flex;
+  gap: 20px;
+}
+.nav-loyalty p {
+  font-size: 10px;
+  font-weight: 400;
+}
+
+.nav-btp-loyalty {
+  display: flex;
+  width: 238px;
+  justify-content: space-between;
+  place-items: center;
+  justify-items: center;
+  position: relative;
+  left: 80px;
+}
+
+.best-tour-plan {
+  display: flex;
+  top: 39px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-main {
+  height: 120px;
+  left: 0;
+  top: 60px;
+  position: relative;
+  align-items: center;
+  display: flex;
+  width: 1440px;
+}
+
+.nav {
+  position: relative;
+}
+
+.search-button {
+  border: none;
+  cursor: pointer;
+  width: 65px;
+  height: 40px;
+  padding: 0px;
+}
+
+.logo-search {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 570px;
+  gap: 108px;
+}
+
+.search-input {
+  width: 350px;
+  height: 40px;
+  padding-left: 20px;
+  color: #333333;
+  background-color: #F5FAFE;
+  border-radius: 6px;
+  border: none;
+}
+
+.logo {
+  width: 177px;
+  height: 24px;
+  left: 165px;
+  top: 111px;
+}
+
+.menu {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+  align-items: center;
+  width: 208px;
+  position: relative;
+}
+
+.nav-buttom-list {
+  display: flex;
+  width: 100%;
+  position: relative;
+  top: 10px;
+}
+
+.nav-bottom {
+  height: 80px;
+  left: 0;
+  top: 180px;
+  background-color: #0A223D;
+  width: 1440px;
+  position: absolute;
+}
+
+.nav-bg {
+  background-color: #F5FAFE;
+  line-height: 13px;
+  height: 60px;
+  top: 0;
+  left: 0;
+  width: 1440px;
+  position: absolute;
+}
+
+/* Style the list */
+ul.breadcrumb, li.breadcrumb {
+  width: 238px;
+  height: 25px;
+  left: 165px;
+  top: 278px;
+  line-height: 13px !important;
+  cursor: pointer;
+}
+
+.bread-crumb {
+  position: absolute;
+  width: 1440px;
+  height: 50px;
+  left: 0px;
+  top: 260px;
+  background-color: #F5FAFE !important;
+}
+
+/* Display list items side by side */
+ul.breadcrumb li, li.breadcrumb li {
+  display: inline;
+  font-size: 10px !important;
+}
+
+/* Add a slash symbol (/) before/behind each list item */
+ul.breadcrumb li + li:before, li.breadcrumb li + li:before {
+  color: #0A223D !important;
+  content: "/ ";
+}
+
+/* Add a color to all links inside the list */
+ul.breadcrumb li a, li.breadcrumb li a {
+  color: #0A223D !important;
+  text-decoration: none;
+  font-size: 10px !important;
+  font-family: "Mulish";
+  font-weight: 400 !important;
+}
+
+.hotel-wrapper {
+  height: 550px;
+  left: 0px;
+  top: 310px;
+  background-color: #F5FAFE;
+}
+
+.hotel-name {
+  display: flex;
+  justify-content: space-between;
+  width: 1102px;
+  align-items: center;
+}
+
+.stars {
+  width: 48px;
+  height: 8px;
+  left: 166px;
+  top: 333px;
+}
+
+.hilton-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 388px;
+  height: 50px;
+}
+.hilton-section h3 {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 30px;
+  color: #333333;
+  width: 268px;
+  height: 30px;
+}
+.hilton-section span {
+  width: 70px;
+  height: 29px;
+  left: 447px;
+  top: 351px;
+  background: #EC1F46;
+  border-radius: 3px;
+  display: flex;
+  justify-content: center;
+}
+.hilton-section span p {
+  font-weight: 600;
+  font-size: 10px;
+  line-height: 13px;
+  color: #FFFFFF;
+}
+
+.half-board {
+  width: 389px;
+  height: 15px;
+  color: #333333;
+  display: block;
+  top: -14px;
+  position: relative;
+}
+.half-board p {
+  font-weight: 400;
+  font-style: normal;
+  font-size: 12px;
+  line-height: 15px;
+  color: #333333;
+  position: relative;
+}
+
+.user-rating {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 80px;
+  height: 55px;
+  background-color: #EC1F46;
+  left: 1210px;
+  top: 339px;
+  border-radius: 4px;
+}
+
+.user {
+  font-style: normal;
+  font-size: 8px;
+  font-weight: 600;
+  line-height: 10px;
+  color: #FFFFFF;
+}
+
+.rate {
+  width: 67px;
+  height: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.rate p {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 18px;
+  font-family: "Mulish";
+}
+
+.slider {
+  display: flex;
+  justify-content: space-between;
+  width: 1098px;
+  height: 450px;
+}
+
+.view-options {
+  background-color: #0A223D;
+  width: 350px;
+  height: 210px;
+  border-radius: 8px;
+  left: 925px;
+  top: 410px;
+}
+
+.beach {
+  width: 728px;
+  height: 450px;
+  left: 167px;
+  top: 410px;
+  background: linear-gradient(180deg, rgba(0, 122, 223, 0.48) 0%, rgba(255, 255, 255, 0.128) 100%);
+  border-radius: 8px;
+}
+
+.map {
+  left: 925px;
+  top: 647px;
+  border-radius: 10px;
+}
+
+.price-room {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  align-items: center;
+}
+
+.price {
+  color: #FFFFFF;
+  width: 86px;
+  height: 59px;
+  left: 951px;
+  top: 439px;
+}
+.price p {
+  margin: 0 !important;
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 14px;
+  width: 100px;
+  height: 14px;
+  left: 951px;
+  top: 439px;
+}
+.price strong {
+  width: 85px;
+  height: 33px;
+  left: 951px;
+  top: 453px;
+  font-family: "Nunito";
+  font-size: 24px;
+  font-weight: 800;
+  line-height: 33px;
+}
+
+.room {
+  color: #FFFFFF;
+  width: 80px;
+  height: max-content;
+  display: flex;
+  flex-direction: column;
+}
+.room span p {
+  width: 100px;
+  height: 16px;
+  left: 1189px;
+  top: 443px;
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  margin: 8px;
+}
+
+.booking {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  width: 295px;
+  height: 25px;
+  color: #FFFFFF;
+  align-items: center;
+  padding-top: 10px;
+}
+.booking h4 {
+  width: 119px;
+  height: 25px;
+  font-family: "Nunito";
+  font-weight: 600;
+  font-size: 18px;
+  font-style: normal;
+  line-height: 25px;
+}
+.booking span p {
+  width: 100px;
+  height: 25px;
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 25px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.booking span p img {
+  width: 13.31px;
+  height: 13.42px;
+}
+
+.view-other-options {
+  background-color: #EC1F46;
+  border-radius: 4px;
+  width: 295px;
+  height: 45px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 17px;
+}
+.view-other-options p a {
+  color: #FFFFFF;
+  width: 127px;
+  height: 19px;
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 19px;
+}
+
+.package-section {
+  height: 878px;
+  background-color: #F5FAFE;
+  top: 859.68px;
+}
+
+.package-contianer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.package-menu {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+.package-menu p {
+  color: #333333;
+  font-family: "Mulish";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 18px;
+}
+
+.package-summery {
+  width: 1110px;
+  height: 840px;
+  display: flex;
+  flex-direction: column;
+}
+
+.package-offer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 200px;
+  width: 1110px;
+}
+
+.package-card {
+  width: 538px;
+  height: 200px;
+}
+
+.card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}

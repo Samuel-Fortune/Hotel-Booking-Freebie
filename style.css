@@ -126,6 +126,11 @@ $breakpoint arguments choices:
   top: 29px;
 }
 
+.card-highlight-wrapper, .card-details-wrapper {
+  background-color: #FFFFFF;
+  height: 150px;
+}
+
 .nav-top {
   display: flex;
   width: 1020px;
@@ -609,13 +614,85 @@ ul.breadcrumb li a, li.breadcrumb li a {
   width: 1110px;
 }
 
-.package-card {
+.package-card1,
+.package-card2 {
   width: 538px;
   height: 200px;
 }
 
-.card {
+.card-highlight, .card-Details {
   display: flex;
   justify-content: space-between;
+}
+.card-highlight .card1 p, .card-Details .card1 p,
+.card-highlight .card2 p,
+.card-Details .card2 p {
+  display: flex;
   align-items: center;
+  font-family: "Mulish";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 15px;
+  color: #333333;
+}
+
+.highlight-header,
+.Details-header {
+  background-color: #0A223D;
+  width: 100%;
+  display: flex;
+  height: 50px;
+  color: #fff;
+  border-radius: 4px 4px 0px 0px;
+  align-items: center;
+}
+.highlight-header h5,
+.Details-header h5 {
+  margin-left: 20px;
+  width: 130px;
+  height: 18px;
+  font-family: "Mulish";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 18px;
+}
+
+.card-highlight, .card-Details {
+  width: 479px;
+  height: 96px;
+  margin-left: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.card-Details {
+  padding-bottom: 0px !important;
+}
+.card-Details .card1 {
+  display: flex;
+  justify-content: center;
+}
+.card-Details .card1 .design {
+  display: flex;
+  flex-direction: column;
+  height: 103px;
+  width: 168px;
+  justify-content: space-between;
+}
+.card-Details .card1 .design p {
+  margin: 0;
+}
+.card-Details .card2 {
+  display: flex;
+  width: 46%;
+  height: 20px;
+}
+.card-Details .card2 p {
+  width: 216px;
+  font-family: "Mulish";
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
 }

@@ -39,9 +39,17 @@
     top: 29px;
 }
 
-.card-highlight-wrapper,.card-details-wrapper {
+.card-highlight-wrapper,
+.card-details-wrapper {
     background-color: $secondary-color;
     height: 150px;
 
-    
+
+}
+
+.package-details-wrapper {
+    background-color: $secondary-color;
+    height: 500px !important;
+    border-radius: calc($smallest-sizing - 2px);
+    width: 1110px;
 }

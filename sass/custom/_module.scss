@@ -521,7 +521,7 @@ ul.breadcrumb li a {
 .package-section {
 
     @extend .wrapper;
-    height: 878px;
+    height: max-content;
     background-color: $main-bg-color;
     top: 859.68px;
 }
@@ -557,9 +557,15 @@ ul.breadcrumb li a {
 
 .package-summery {
     width: 1110px;
-    height: 840px;
+    height: 900px;
+    max-height: max-content;
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
+
+    h3 {
+        margin-bottom: 0;
+    }
 
 }
 
@@ -599,7 +605,8 @@ ul.breadcrumb li a {
 }
 
 .highlight-header,
-.Details-header {
+.details-header,
+.card-head {
     background-color: $tertiary-color;
     width: 100%;
     display: flex;
@@ -610,7 +617,7 @@ ul.breadcrumb li a {
 
     h5 {
         margin-left: calc($larger-sizing - 4px);
-        width: 130px;
+        width: 180px;
         height: $Large-sizing;
         font-family: 'Mulish';
         font-style: normal;
@@ -624,9 +631,9 @@ ul.breadcrumb li a {
 .card-highlight {
     width: 479px;
     height: 96px;
-    margin-left: 20px;
-    padding-top: 20px;
-    padding-bottom: 20px;
+    margin-left: calc($larger-sizing - 4px);
+    padding-top: calc($larger-sizing - 4px);
+    padding-bottom: calc($larger-sizing - 4px);
 
 
 }
@@ -662,7 +669,7 @@ ul.breadcrumb li a {
 
         p {
             width: 216px;
-            
+
             font-family: 'Mulish';
             font-weight: 400;
             font-size: $medium-sizing;
@@ -673,4 +680,220 @@ ul.breadcrumb li a {
     }
 
 
+}
+
+.package-card-details {
+    width: 1110px;
+    height: 550px;
+
+
+}
+
+.summary-details {
+    @extend .card-highlight;
+    height: 405px !important;
+    width: 1049px !important;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+
+    .first-three {
+        display: flex;
+        justify-content: space-between;
+        height: 314px;
+        border-bottom: 1px dashed #E0E0E0;
+        // border-style: dotted;
+
+
+        // &:nth-child(3n) {
+        //     border-bottom: 2px solid $header-color;
+        // }
+    }
+
+    .last-three {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .activity1 {
+        // width: 258px;
+        height: 300px;
+
+        h6 {
+            color: $primary-color;
+            width: 122px;
+            height: 16px;
+            font-family: 'Mulish';
+            font-style: normal;
+            font-weight: 600;
+            line-height: calc($Large-sizing - 2px);
+            margin-bottom: 0;
+        }
+
+        .first {
+            display: flex;
+            flex-direction: column;
+
+            p {
+                align-items: center;
+                display: flex;
+                font-family: 'Mulish';
+                font-style: normal;
+                line-height: calc($medium-sizing + 1px);
+            }
+
+        }
+    }
+
+    .activity2 {
+        // width: 284px;
+        height: 238px;
+
+        h6 {
+            color: $primary-color;
+            width: 240px;
+            height: 16px;
+            font-family: 'Mulish';
+            font-style: normal;
+            font-weight: 600;
+            line-height: calc($Large-sizing - 2px);
+            margin-bottom: 0;
+        }
+
+        .first {
+            display: flex;
+            flex-direction: column;
+
+            p {
+                align-items: center;
+                display: flex;
+                font-family: 'Mulish';
+                font-style: normal;
+                line-height: calc($medium-sizing + 1px);
+            }
+
+        }
+    }
+
+    .activity3 {
+        // width: 238px;
+        height: 233px;
+
+        h6 {
+            color: $primary-color;
+            width: 240px;
+            height: 16px;
+            font-family: 'Mulish';
+            font-style: normal;
+            font-weight: 600;
+            line-height: calc($Large-sizing - 2px);
+            margin-bottom: 0;
+        }
+
+        .first {
+            display: flex;
+            flex-direction: column;
+
+            p {
+                align-items: center;
+                display: flex;
+                font-family: 'Mulish';
+                font-style: normal;
+                line-height: calc($medium-sizing + 1px);
+            }
+
+        }
+    }
+
+    .activity4 {
+        // width: 121px;
+        height: 90px;
+        width: 192px;
+
+        h6 {
+            color: $primary-color;
+            width: 122px;
+            height: 16px;
+            font-family: 'Mulish';
+            font-style: normal;
+            font-weight: 600;
+            line-height: calc($Large-sizing - 2px);
+            margin-bottom: 0;
+        }
+
+        .first {
+            display: flex;
+            flex-direction: column;
+
+            p {
+                align-items: center;
+                display: flex;
+                font-family: 'Mulish';
+                font-style: normal;
+                line-height: calc($medium-sizing + 1px);
+            }
+
+        }
+    }
+
+    .activity5 {
+        // width: 194px;
+        height: 90px;
+
+        h6 {
+            color: $primary-color;
+            width: 122px;
+            height: 16px;
+            font-family: 'Mulish';
+            font-style: normal;
+            font-weight: 600;
+            line-height: calc($Large-sizing - 2px);
+            margin-bottom: 0;
+        }
+
+        .first {
+            display: flex;
+            flex-direction: column;
+
+            p {
+                align-items: center;
+                display: flex;
+                font-family: 'Mulish';
+                font-style: normal;
+                line-height: calc($medium-sizing + 1px);
+            }
+
+        }
+    }
+
+    .activity6 {
+        // width: 163px;
+        height: 90px;
+
+        h6 {
+            color: $primary-color;
+            width: 240px;
+            height: 16px;
+            font-family: 'Mulish';
+            font-style: normal;
+            font-weight: 600;
+            line-height: calc($Large-sizing - 2px);
+            margin-bottom: 0;
+        }
+
+        .first {
+            display: flex;
+            flex-direction: column;
+
+            p {
+                align-items: center;
+                display: flex;
+                font-family: 'Mulish';
+                font-style: normal;
+                line-height: calc($medium-sizing + 1px);
+            }
+
+        }
+    }
 }

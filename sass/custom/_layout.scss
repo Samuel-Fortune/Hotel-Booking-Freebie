@@ -1,11 +1,9 @@
 .site-wrapper {
     width: 79%;
-    max-width: 1100px;
-    height: max-content;
+    // height: max-content;
     padding: 0 0px;
     margin: auto;
-    left: 0;
-    right: 0;
+
 
 
     // @include respond(md) {
@@ -18,25 +16,21 @@
 
 .wrapper {
     width: 1440px;
-    position: absolute;
+
 }
 
 .column-wrapper {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    position: relative;
 }
 
 .card-wrapper {
     width: 295px;
     height: max-content;
     margin: auto;
-    left: 0;
-    right: 0;
     padding: 0 0px;
-    position: relative;
-    top: 29px;
+
 }
 
 .card-highlight-wrapper,

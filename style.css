@@ -7,7 +7,7 @@ body {
   margin: 0;
   box-sizing: border-box;
   font-family: "Mulish";
-  background-color: #FFFFFF;
+  background-color: #F5FAFE;
 }
 
 a {
@@ -95,35 +95,25 @@ $breakpoint arguments choices:
 */
 .site-wrapper {
   width: 79%;
-  max-width: 1100px;
-  height: max-content;
   padding: 0 0px;
   margin: auto;
-  left: 0;
-  right: 0;
 }
 
 .wrapper, .package-section, .hotel-wrapper {
   width: 1440px;
-  position: absolute;
 }
 
 .column-wrapper {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  position: relative;
 }
 
 .card-wrapper {
   width: 295px;
   height: max-content;
   margin: auto;
-  left: 0;
-  right: 0;
   padding: 0 0px;
-  position: relative;
-  top: 29px;
 }
 
 .card-highlight-wrapper,
@@ -139,107 +129,74 @@ $breakpoint arguments choices:
   width: 1110px;
 }
 
-.nav-top {
+.nav-bg {
+  background-color: #F5FAFE;
+  line-height: 13px;
+  width: 100%;
+}
+.nav-bg .nav-top {
   display: flex;
-  width: 1020px;
+  width: 100%;
   justify-content: space-between;
-  top: 24px;
   line-height: 13px;
   align-items: center;
   color: #333333;
   font-style: normal;
-  height: 40px;
 }
-
-.nav-enquiry {
+.nav-bg .nav-enquiry {
   display: flex;
-  width: 243px;
-  height: 13px;
-  left: 165px;
-  top: 24px;
   justify-content: space-between;
 }
-.nav-enquiry p {
+.nav-bg .nav-enquiry p {
   font-size: 10px;
   font-style: normal;
   font-weight: 700;
 }
-
-.nav-btp {
+.nav-bg .nav-btp-loyalty {
   display: flex;
-  width: 102px;
-  height: 18px;
-  left: 957px;
-  top: 25px;
+  justify-content: space-between;
+  align-items: center;
   gap: 20px;
 }
-.nav-btp p {
+.nav-bg .nav-btp {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+.nav-bg .nav-btp p {
   font-style: normal;
   font-weight: 400;
   font-size: 10px;
 }
-
-.nav-loyalty {
-  width: 115px;
-  height: 18px;
-  left: 1157px;
-  top: 25px;
+.nav-bg .nav-loyalty {
   display: flex;
   gap: 20px;
+  align-items: center;
 }
-.nav-loyalty p {
+.nav-bg .nav-loyalty p {
   font-size: 10px;
   font-weight: 400;
 }
 
-.nav-btp-loyalty {
-  display: flex;
-  width: 238px;
-  justify-content: space-between;
-  place-items: center;
-  justify-items: center;
-  position: relative;
-  left: 80px;
-}
-
-.best-tour-plan {
-  display: flex;
-  top: 39px;
-  justify-content: space-between;
-  align-items: center;
-}
-
 .nav-main {
   height: 120px;
-  left: 0;
-  top: 60px;
-  position: relative;
   align-items: center;
   display: flex;
-  width: 1440px;
+  width: 100%;
+  background-color: #FFFFFF;
 }
-
-.nav {
-  position: relative;
-}
-
-.search-button {
-  border: none;
-  cursor: pointer;
-  width: 65px;
-  height: 40px;
-  padding: 0px;
-}
-
-.logo-search {
+.nav-main .best-tour-plan {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 570px;
+}
+.nav-main .logo-search {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   gap: 108px;
 }
-
-.search-input {
+.nav-main .search-input {
   width: 350px;
   height: 40px;
   padding-left: 20px;
@@ -248,82 +205,52 @@ $breakpoint arguments choices:
   border-radius: 6px;
   border: none;
 }
-
-.logo {
-  width: 177px;
-  height: 24px;
-  left: 165px;
-  top: 111px;
+.nav-main .search-button {
+  border: none;
+  cursor: pointer;
+  width: 65px;
+  height: 40px;
+  padding: 0px;
 }
-
-.menu {
+.nav-main .menu {
   display: flex;
   justify-content: space-between;
   gap: 30px;
   align-items: center;
-  width: 208px;
-  position: relative;
-}
-
-.nav-buttom-list {
-  display: flex;
-  width: 100%;
-  position: relative;
-  top: 10px;
+  width: 18%;
 }
 
 .nav-bottom {
-  height: 80px;
-  left: 0;
-  top: 180px;
   background-color: #0A223D;
-  width: 1440px;
-  position: absolute;
+  width: 100%;
 }
-
-.nav-bg {
-  background-color: #F5FAFE;
-  line-height: 13px;
-  height: 60px;
-  top: 0;
-  left: 0;
-  width: 1440px;
-  position: absolute;
-}
-
-/* Style the list */
-ul.breadcrumb, li.breadcrumb {
-  width: 238px;
-  height: 25px;
-  left: 165px;
-  top: 278px;
-  line-height: 13px !important;
-  cursor: pointer;
+.nav-bottom .nav-buttom-list {
+  display: flex;
+  width: 100%;
 }
 
 .bread-crumb {
-  position: absolute;
-  width: 1440px;
-  height: 50px;
-  left: 0px;
-  top: 260px;
-  background-color: #F5FAFE !important;
+  width: 100%;
+  /* Style the list */
+  /* Display list items side by side */
+  /* Add a slash symbol (/) before/behind each list item */
+  /* Add a color to all links inside the list */
 }
-
-/* Display list items side by side */
-ul.breadcrumb li, li.breadcrumb li {
+.bread-crumb ul.breadcrumb, .bread-crumb li.breadcrumb {
+  width: 238px;
+  height: 25px;
+  line-height: 13px !important;
+  cursor: pointer;
+}
+.bread-crumb ul.breadcrumb li, .bread-crumb li.breadcrumb li {
   display: inline;
   font-size: 10px !important;
 }
-
-/* Add a slash symbol (/) before/behind each list item */
-ul.breadcrumb li + li:before, li.breadcrumb li + li:before {
+.bread-crumb ul.breadcrumb li + li:before, .bread-crumb li.breadcrumb li + li:before {
   color: #0A223D !important;
   content: "/ ";
 }
-
-/* Add a color to all links inside the list */
-ul.breadcrumb li a, li.breadcrumb li a {
+.bread-crumb ul.breadcrumb li a, .bread-crumb li.breadcrumb li a {
   color: #0A223D !important;
   text-decoration: none;
   font-size: 10px !important;
@@ -333,33 +260,26 @@ ul.breadcrumb li a, li.breadcrumb li a {
 
 .hotel-wrapper {
   height: 550px;
-  left: 0px;
-  top: 310px;
   background-color: #F5FAFE;
 }
-
-.hotel-name {
+.hotel-wrapper .hotel-name {
   display: flex;
   justify-content: space-between;
   width: 1102px;
   align-items: center;
 }
-
-.stars {
+.hotel-wrapper .stars {
   width: 48px;
   height: 8px;
-  left: 166px;
-  top: 333px;
 }
-
-.hilton-section {
+.hotel-wrapper .hilton-section {
   display: flex;
   justify-content: space-between;
   align-items: center;
   width: 388px;
   height: 50px;
 }
-.hilton-section h3 {
+.hotel-wrapper .hilton-section h3 {
   font-size: 24px;
   font-weight: 700;
   line-height: 30px;
@@ -367,121 +287,93 @@ ul.breadcrumb li a, li.breadcrumb li a {
   width: 268px;
   height: 30px;
 }
-.hilton-section span {
+.hotel-wrapper .hilton-section span {
   width: 70px;
   height: 29px;
-  left: 447px;
-  top: 351px;
   background: #EC1F46;
   border-radius: 3px;
   display: flex;
   justify-content: center;
 }
-.hilton-section span p {
+.hotel-wrapper .hilton-section span p {
   font-weight: 600;
   font-size: 10px;
   line-height: 13px;
   color: #FFFFFF;
 }
-
-.half-board {
+.hotel-wrapper .half-board {
   width: 389px;
   height: 15px;
   color: #333333;
   display: block;
-  top: -14px;
-  position: relative;
 }
-.half-board p {
+.hotel-wrapper .half-board p {
   font-weight: 400;
   font-style: normal;
   font-size: 12px;
   line-height: 15px;
   color: #333333;
-  position: relative;
 }
-
-.user-rating {
+.hotel-wrapper .user-rating {
   display: flex;
   flex-direction: column;
   align-items: center;
   width: 80px;
   height: 55px;
   background-color: #EC1F46;
-  left: 1210px;
-  top: 339px;
   border-radius: 4px;
 }
-
-.user {
+.hotel-wrapper .user-rating .user {
   font-style: normal;
   font-size: 8px;
   font-weight: 600;
   line-height: 10px;
   color: #FFFFFF;
 }
-
-.rate {
+.hotel-wrapper .user-rating .user .rate {
   width: 67px;
   height: 18px;
   display: flex;
   align-items: center;
   justify-content: center;
 }
-.rate p {
+.hotel-wrapper .user-rating .user .rate p {
   font-size: 14px;
   font-weight: 700;
   line-height: 18px;
   font-family: "Mulish";
 }
-
-.slider {
+.hotel-wrapper .slider {
   display: flex;
   justify-content: space-between;
   width: 1098px;
   height: 450px;
 }
-
-.view-options {
+.hotel-wrapper .slider .beach {
+  width: 728px;
+  height: 450px;
+  background: linear-gradient(180deg, rgba(0, 122, 223, 0.48) 0%, rgba(255, 255, 255, 0.128) 100%);
+  border-radius: 8px;
+}
+.hotel-wrapper .view-options {
   background-color: #0A223D;
   width: 350px;
   height: 210px;
   border-radius: 8px;
-  left: 925px;
-  top: 410px;
 }
-
-.beach {
-  width: 728px;
-  height: 450px;
-  left: 167px;
-  top: 410px;
-  background: linear-gradient(180deg, rgba(0, 122, 223, 0.48) 0%, rgba(255, 255, 255, 0.128) 100%);
-  border-radius: 8px;
-}
-
-.map {
-  left: 925px;
-  top: 647px;
-  border-radius: 10px;
-}
-
-.price-room {
+.hotel-wrapper .view-options .price-room {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   width: 100%;
   align-items: center;
 }
-
-.price {
+.hotel-wrapper .view-options .price-room .price {
   color: #FFFFFF;
   width: 86px;
   height: 59px;
-  left: 951px;
-  top: 439px;
 }
-.price p {
+.hotel-wrapper .view-options .price-room .price p {
   margin: 0 !important;
   font-family: "Nunito";
   font-style: normal;
@@ -490,32 +382,25 @@ ul.breadcrumb li a, li.breadcrumb li a {
   line-height: 14px;
   width: 100px;
   height: 14px;
-  left: 951px;
-  top: 439px;
 }
-.price strong {
+.hotel-wrapper .view-options .price-room .price strong {
   width: 85px;
   height: 33px;
-  left: 951px;
-  top: 453px;
   font-family: "Nunito";
   font-size: 24px;
   font-weight: 800;
   line-height: 33px;
 }
-
-.room {
+.hotel-wrapper .view-options .price-room .room {
   color: #FFFFFF;
   width: 80px;
   height: max-content;
   display: flex;
   flex-direction: column;
 }
-.room span p {
+.hotel-wrapper .view-options .price-room .room span p {
   width: 100px;
   height: 16px;
-  left: 1189px;
-  top: 443px;
   font-family: "Nunito";
   font-style: normal;
   font-weight: 400;
@@ -523,8 +408,7 @@ ul.breadcrumb li a, li.breadcrumb li a {
   line-height: 16px;
   margin: 8px;
 }
-
-.booking {
+.hotel-wrapper .view-options .booking {
   display: flex;
   justify-content: space-between;
   flex-direction: row;
@@ -534,7 +418,7 @@ ul.breadcrumb li a, li.breadcrumb li a {
   align-items: center;
   padding-top: 10px;
 }
-.booking h4 {
+.hotel-wrapper .view-options .booking h4 {
   width: 119px;
   height: 25px;
   font-family: "Nunito";
@@ -543,7 +427,7 @@ ul.breadcrumb li a, li.breadcrumb li a {
   font-style: normal;
   line-height: 25px;
 }
-.booking span p {
+.hotel-wrapper .view-options .booking span p {
   width: 100px;
   height: 25px;
   font-family: "Nunito";
@@ -555,12 +439,11 @@ ul.breadcrumb li a, li.breadcrumb li a {
   justify-content: flex-end;
   align-items: center;
 }
-.booking span p img {
+.hotel-wrapper .view-options .booking span p img {
   width: 13.31px;
   height: 13.42px;
 }
-
-.view-other-options {
+.hotel-wrapper .view-options .view-other-options {
   background-color: #EC1F46;
   border-radius: 4px;
   width: 295px;
@@ -570,7 +453,7 @@ ul.breadcrumb li a, li.breadcrumb li a {
   align-items: center;
   margin-top: 17px;
 }
-.view-other-options p a {
+.hotel-wrapper .view-options .view-other-options p a {
   color: #FFFFFF;
   width: 127px;
   height: 19px;
@@ -581,24 +464,25 @@ ul.breadcrumb li a, li.breadcrumb li a {
   line-height: 19px;
 }
 
+.map {
+  border-radius: 10px;
+}
+
 .package-section {
   height: max-content;
   background-color: #F5FAFE;
-  top: 859.68px;
 }
-
-.package-contianer {
+.package-section .package-contianer {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
-
-.package-menu {
+.package-section .package-contianer .package-menu {
   display: flex;
   justify-content: space-between;
   width: 100%;
 }
-.package-menu p {
+.package-section .package-contianer .package-menu p {
   color: #333333;
   font-family: "Mulish";
   font-style: normal;
@@ -606,8 +490,7 @@ ul.breadcrumb li a, li.breadcrumb li a {
   font-size: 14px;
   line-height: 18px;
 }
-
-.package-summery {
+.package-section .package-contianer .package-summery {
   width: 1110px;
   height: 900px;
   max-height: max-content;
@@ -615,45 +498,27 @@ ul.breadcrumb li a, li.breadcrumb li a {
   flex-direction: column;
   justify-content: space-between;
 }
-.package-summery h3 {
+.package-section .package-contianer .package-summery h3 {
   margin-bottom: 0;
 }
-
-.package-offer {
+.package-section .package-contianer .package-summery .package-offer {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   height: 200px;
   width: 1110px;
 }
-
-.package-card1,
-.package-card2 {
+.package-section .package-contianer .package-summery .package-offer .package-card1,
+.package-section .package-contianer .package-summery .package-offer .package-card2 {
   width: 538px;
   height: 200px;
 }
-
-.card-highlight, .summary-details, .card-Details {
-  display: flex;
-  justify-content: space-between;
-}
-.card-highlight .card1 p, .summary-details .card1 p, .card-Details .card1 p,
-.card-highlight .card2 p,
-.summary-details .card2 p,
-.card-Details .card2 p {
-  display: flex;
-  align-items: center;
-  font-family: "Mulish";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 15px;
-  color: #333333;
-}
-
-.highlight-header,
-.details-header,
-.card-head {
+.package-section .package-contianer .package-summery .package-offer .package-card1 .highlight-header,
+.package-section .package-contianer .package-summery .package-offer .package-card1 .details-header,
+.package-section .package-contianer .package-summery .package-offer .package-card1 .card-head,
+.package-section .package-contianer .package-summery .package-offer .package-card2 .highlight-header,
+.package-section .package-contianer .package-summery .package-offer .package-card2 .details-header,
+.package-section .package-contianer .package-summery .package-offer .package-card2 .card-head {
   background-color: #0A223D;
   width: 100%;
   display: flex;
@@ -662,9 +527,12 @@ ul.breadcrumb li a, li.breadcrumb li a {
   border-radius: 4px 4px 0px 0px;
   align-items: center;
 }
-.highlight-header h5,
-.details-header h5,
-.card-head h5 {
+.package-section .package-contianer .package-summery .package-offer .package-card1 .highlight-header h5,
+.package-section .package-contianer .package-summery .package-offer .package-card1 .details-header h5,
+.package-section .package-contianer .package-summery .package-offer .package-card1 .card-head h5,
+.package-section .package-contianer .package-summery .package-offer .package-card2 .highlight-header h5,
+.package-section .package-contianer .package-summery .package-offer .package-card2 .details-header h5,
+.package-section .package-contianer .package-summery .package-offer .package-card2 .card-head h5 {
   margin-left: 20px;
   width: 180px;
   height: 18px;
@@ -674,71 +542,293 @@ ul.breadcrumb li a, li.breadcrumb li a {
   font-size: 14px;
   line-height: 18px;
 }
-
-.card-highlight, .summary-details, .card-Details {
+.package-section .package-contianer .package-summery .package-offer .package-card1 .highlight-header .card-highlight, .package-section .package-contianer .package-summery .package-offer .package-card1 .highlight-header .package-card-details .summary-details, .package-section .package-contianer .package-summery .package-card-details .package-offer .package-card1 .highlight-header .summary-details, .package-section .package-contianer .package-summery .package-offer .package-card1 .highlight-header .card-Details,
+.package-section .package-contianer .package-summery .package-offer .package-card1 .details-header .card-highlight,
+.package-section .package-contianer .package-summery .package-offer .package-card1 .details-header .package-card-details .summary-details,
+.package-section .package-contianer .package-summery .package-card-details .package-offer .package-card1 .details-header .summary-details,
+.package-section .package-contianer .package-summery .package-offer .package-card1 .details-header .card-Details,
+.package-section .package-contianer .package-summery .package-offer .package-card1 .card-head .card-highlight,
+.package-section .package-contianer .package-summery .package-offer .package-card1 .card-head .package-card-details .summary-details,
+.package-section .package-contianer .package-summery .package-card-details .package-offer .package-card1 .card-head .summary-details,
+.package-section .package-contianer .package-summery .package-offer .package-card1 .card-head .card-Details,
+.package-section .package-contianer .package-summery .package-offer .package-card2 .highlight-header .card-highlight,
+.package-section .package-contianer .package-summery .package-offer .package-card2 .highlight-header .package-card-details .summary-details,
+.package-section .package-contianer .package-summery .package-card-details .package-offer .package-card2 .highlight-header .summary-details,
+.package-section .package-contianer .package-summery .package-offer .package-card2 .highlight-header .card-Details,
+.package-section .package-contianer .package-summery .package-offer .package-card2 .details-header .card-highlight,
+.package-section .package-contianer .package-summery .package-offer .package-card2 .details-header .package-card-details .summary-details,
+.package-section .package-contianer .package-summery .package-card-details .package-offer .package-card2 .details-header .summary-details,
+.package-section .package-contianer .package-summery .package-offer .package-card2 .details-header .card-Details,
+.package-section .package-contianer .package-summery .package-offer .package-card2 .card-head .card-highlight,
+.package-section .package-contianer .package-summery .package-offer .package-card2 .card-head .package-card-details .summary-details,
+.package-section .package-contianer .package-summery .package-card-details .package-offer .package-card2 .card-head .summary-details,
+.package-section .package-contianer .package-summery .package-offer .package-card2 .card-head .card-Details {
+  display: flex;
+  justify-content: space-between;
   width: 479px;
   height: 96px;
   margin-left: 20px;
   padding-top: 20px;
   padding-bottom: 20px;
 }
-
-.card-Details {
+.package-section .package-contianer .package-summery .package-offer .package-card1 .highlight-header .card-highlight .card1 p, .package-section .package-contianer .package-summery .package-offer .package-card1 .highlight-header .package-card-details .summary-details .card1 p, .package-section .package-contianer .package-summery .package-card-details .package-offer .package-card1 .highlight-header .summary-details .card1 p, .package-section .package-contianer .package-summery .package-offer .package-card1 .highlight-header .card-Details .card1 p,
+.package-section .package-contianer .package-summery .package-offer .package-card1 .highlight-header .details-header .card-Details .card1 p,
+.package-section .package-contianer .package-summery .package-offer .package-card1 .details-header .highlight-header .card-Details .card1 p,
+.package-section .package-contianer .package-summery .package-offer .package-card1 .highlight-header .card-head .card-Details .card1 p,
+.package-section .package-contianer .package-summery .package-offer .package-card1 .card-head .highlight-header .card-Details .card1 p,
+.package-section .package-contianer .package-summery .package-offer .package-card1 .package-card2 .highlight-header .card-Details .card1 p,
+.package-section .package-contianer .package-summery .package-offer .package-card2 .package-card1 .highlight-header .card-Details .card1 p,
+.package-section .package-contianer .package-summery .package-offer .package-card1 .highlight-header .package-card2 .details-header .card-Details .card1 p,
+.package-section .package-contianer .package-summery .package-offer .package-card2 .details-header .package-card1 .highlight-header .card-Details .card1 p,
+.package-section .package-contianer .package-summery .package-offer .package-card1 .highlight-header .package-card2 .card-head .card-Details .card1 p,
+.package-section .package-contianer .package-summery .package-offer .package-card2 .card-head .package-card1 .highlight-header .card-Details .card1 p,
+.package-section .package-contianer .package-summery .package-offer .package-card1 .highlight-header .card-highlight .card2 p,
+.package-section .package-contianer .package-summery .package-offer .package-card1 .highlight-header .package-card-details .summary-details .card2 p,
+.package-section .package-contianer .package-summery .package-card-details .package-offer .package-card1 .highlight-header .summary-details .card2 p,
+.package-section .package-contianer .package-summery .package-offer .package-card1 .highlight-header .card-Details .card2 p,
+.package-section .package-contianer .package-summery .package-offer .package-card1 .highlight-header .details-header .card-Details .card2 p,
+.package-section .package-contianer .package-summery .package-offer .package-card1 .details-header .highlight-header .card-Details .card2 p,
+.package-section .package-contianer .package-summery .package-offer .package-card1 .highlight-header .card-head .card-Details .card2 p,
+.package-section .package-contianer .package-summery .package-offer .package-card1 .card-head .highlight-header .card-Details .card2 p,
+.package-section .package-contianer .package-summery .package-offer .package-card1 .package-card2 .highlight-header .card-Details .card2 p,
+.package-section .package-contianer .package-summery .package-offer .package-card2 .package-card1 .highlight-header .card-Details .card2 p,
+.package-section .package-contianer .package-summery .package-offer .package-card1 .highlight-header .package-card2 .details-header .card-Details .card2 p,
+.package-section .package-contianer .package-summery .package-offer .package-card2 .details-header .package-card1 .highlight-header .card-Details .card2 p,
+.package-section .package-contianer .package-summery .package-offer .package-card1 .highlight-header .package-card2 .card-head .card-Details .card2 p,
+.package-section .package-contianer .package-summery .package-offer .package-card2 .card-head .package-card1 .highlight-header .card-Details .card2 p,
+.package-section .package-contianer .package-summery .package-offer .package-card1 .details-header .card-highlight .card1 p,
+.package-section .package-contianer .package-summery .package-offer .package-card1 .details-header .package-card-details .summary-details .card1 p,
+.package-section .package-contianer .package-summery .package-card-details .package-offer .package-card1 .details-header .summary-details .card1 p,
+.package-section .package-contianer .package-summery .package-offer .package-card1 .details-header .highlight-header .card-Details .card1 p,
+.package-section .package-contianer .package-summery .package-offer .package-card1 .highlight-header .details-header .card-Details .card1 p,
+.package-section .package-contianer .package-summery .package-offer .package-card1 .details-header .card-Details .card1 p,
+.package-section .package-contianer .package-summery .package-offer .package-card1 .details-header .card-head .card-Details .card1 p,
+.package-section .package-contianer .package-summery .package-offer .package-card1 .card-head .details-header .card-Details .card1 p,
+.package-section .package-contianer .package-summery .package-offer .package-card1 .details-header .package-card2 .highlight-header .card-Details .card1 p,
+.package-section .package-contianer .package-summery .package-offer .package-card2 .highlight-header .package-card1 .details-header .card-Details .card1 p,
+.package-section .package-contianer .package-summery .package-offer .package-card1 .package-card2 .details-header .card-Details .card1 p,
+.package-section .package-contianer .package-summery .package-offer .package-card2 .package-card1 .details-header .card-Details .card1 p,
+.package-section .package-contianer .package-summery .package-offer .package-card1 .details-header .package-card2 .card-head .card-Details .card1 p,
+.package-section .package-contianer .package-summery .package-offer .package-card2 .card-head .package-card1 .details-header .card-Details .card1 p,
+.package-section .package-contianer .package-summery .package-offer .package-card1 .details-header .card-highlight .card2 p,
+.package-section .package-contianer .package-summery .package-offer .package-card1 .details-header .package-card-details .summary-details .card2 p,
+.package-section .package-contianer .package-summery .package-card-details .package-offer .package-card1 .details-header .summary-details .card2 p,
+.package-section .package-contianer .package-summery .package-offer .package-card1 .details-header .highlight-header .card-Details .card2 p,
+.package-section .package-contianer .package-summery .package-offer .package-card1 .highlight-header .details-header .card-Details .card2 p,
+.package-section .package-contianer .package-summery .package-offer .package-card1 .details-header .card-Details .card2 p,
+.package-section .package-contianer .package-summery .package-offer .package-card1 .details-header .card-head .card-Details .card2 p,
+.package-section .package-contianer .package-summery .package-offer .package-card1 .card-head .details-header .card-Details .card2 p,
+.package-section .package-contianer .package-summery .package-offer .package-card1 .details-header .package-card2 .highlight-header .card-Details .card2 p,
+.package-section .package-contianer .package-summery .package-offer .package-card2 .highlight-header .package-card1 .details-header .card-Details .card2 p,
+.package-section .package-contianer .package-summery .package-offer .package-card1 .package-card2 .details-header .card-Details .card2 p,
+.package-section .package-contianer .package-summery .package-offer .package-card2 .package-card1 .details-header .card-Details .card2 p,
+.package-section .package-contianer .package-summery .package-offer .package-card1 .details-header .package-card2 .card-head .card-Details .card2 p,
+.package-section .package-contianer .package-summery .package-offer .package-card2 .card-head .package-card1 .details-header .card-Details .card2 p,
+.package-section .package-contianer .package-summery .package-offer .package-card1 .card-head .card-highlight .card1 p,
+.package-section .package-contianer .package-summery .package-offer .package-card1 .card-head .package-card-details .summary-details .card1 p,
+.package-section .package-contianer .package-summery .package-card-details .package-offer .package-card1 .card-head .summary-details .card1 p,
+.package-section .package-contianer .package-summery .package-offer .package-card1 .card-head .highlight-header .card-Details .card1 p,
+.package-section .package-contianer .package-summery .package-offer .package-card1 .highlight-header .card-head .card-Details .card1 p,
+.package-section .package-contianer .package-summery .package-offer .package-card1 .card-head .details-header .card-Details .card1 p,
+.package-section .package-contianer .package-summery .package-offer .package-card1 .details-header .card-head .card-Details .card1 p,
+.package-section .package-contianer .package-summery .package-offer .package-card1 .card-head .card-Details .card1 p,
+.package-section .package-contianer .package-summery .package-offer .package-card1 .card-head .package-card2 .highlight-header .card-Details .card1 p,
+.package-section .package-contianer .package-summery .package-offer .package-card2 .highlight-header .package-card1 .card-head .card-Details .card1 p,
+.package-section .package-contianer .package-summery .package-offer .package-card1 .card-head .package-card2 .details-header .card-Details .card1 p,
+.package-section .package-contianer .package-summery .package-offer .package-card2 .details-header .package-card1 .card-head .card-Details .card1 p,
+.package-section .package-contianer .package-summery .package-offer .package-card1 .package-card2 .card-head .card-Details .card1 p,
+.package-section .package-contianer .package-summery .package-offer .package-card2 .package-card1 .card-head .card-Details .card1 p,
+.package-section .package-contianer .package-summery .package-offer .package-card1 .card-head .card-highlight .card2 p,
+.package-section .package-contianer .package-summery .package-offer .package-card1 .card-head .package-card-details .summary-details .card2 p,
+.package-section .package-contianer .package-summery .package-card-details .package-offer .package-card1 .card-head .summary-details .card2 p,
+.package-section .package-contianer .package-summery .package-offer .package-card1 .card-head .highlight-header .card-Details .card2 p,
+.package-section .package-contianer .package-summery .package-offer .package-card1 .highlight-header .card-head .card-Details .card2 p,
+.package-section .package-contianer .package-summery .package-offer .package-card1 .card-head .details-header .card-Details .card2 p,
+.package-section .package-contianer .package-summery .package-offer .package-card1 .details-header .card-head .card-Details .card2 p,
+.package-section .package-contianer .package-summery .package-offer .package-card1 .card-head .card-Details .card2 p,
+.package-section .package-contianer .package-summery .package-offer .package-card1 .card-head .package-card2 .highlight-header .card-Details .card2 p,
+.package-section .package-contianer .package-summery .package-offer .package-card2 .highlight-header .package-card1 .card-head .card-Details .card2 p,
+.package-section .package-contianer .package-summery .package-offer .package-card1 .card-head .package-card2 .details-header .card-Details .card2 p,
+.package-section .package-contianer .package-summery .package-offer .package-card2 .details-header .package-card1 .card-head .card-Details .card2 p,
+.package-section .package-contianer .package-summery .package-offer .package-card1 .package-card2 .card-head .card-Details .card2 p,
+.package-section .package-contianer .package-summery .package-offer .package-card2 .package-card1 .card-head .card-Details .card2 p,
+.package-section .package-contianer .package-summery .package-offer .package-card2 .highlight-header .card-highlight .card1 p,
+.package-section .package-contianer .package-summery .package-offer .package-card2 .highlight-header .package-card-details .summary-details .card1 p,
+.package-section .package-contianer .package-summery .package-card-details .package-offer .package-card2 .highlight-header .summary-details .card1 p,
+.package-section .package-contianer .package-summery .package-offer .package-card2 .package-card1 .highlight-header .card-Details .card1 p,
+.package-section .package-contianer .package-summery .package-offer .package-card1 .package-card2 .highlight-header .card-Details .card1 p,
+.package-section .package-contianer .package-summery .package-offer .package-card2 .highlight-header .package-card1 .details-header .card-Details .card1 p,
+.package-section .package-contianer .package-summery .package-offer .package-card1 .details-header .package-card2 .highlight-header .card-Details .card1 p,
+.package-section .package-contianer .package-summery .package-offer .package-card2 .highlight-header .package-card1 .card-head .card-Details .card1 p,
+.package-section .package-contianer .package-summery .package-offer .package-card1 .card-head .package-card2 .highlight-header .card-Details .card1 p,
+.package-section .package-contianer .package-summery .package-offer .package-card2 .highlight-header .card-Details .card1 p,
+.package-section .package-contianer .package-summery .package-offer .package-card2 .highlight-header .details-header .card-Details .card1 p,
+.package-section .package-contianer .package-summery .package-offer .package-card2 .details-header .highlight-header .card-Details .card1 p,
+.package-section .package-contianer .package-summery .package-offer .package-card2 .highlight-header .card-head .card-Details .card1 p,
+.package-section .package-contianer .package-summery .package-offer .package-card2 .card-head .highlight-header .card-Details .card1 p,
+.package-section .package-contianer .package-summery .package-offer .package-card2 .highlight-header .card-highlight .card2 p,
+.package-section .package-contianer .package-summery .package-offer .package-card2 .highlight-header .package-card-details .summary-details .card2 p,
+.package-section .package-contianer .package-summery .package-card-details .package-offer .package-card2 .highlight-header .summary-details .card2 p,
+.package-section .package-contianer .package-summery .package-offer .package-card2 .package-card1 .highlight-header .card-Details .card2 p,
+.package-section .package-contianer .package-summery .package-offer .package-card1 .package-card2 .highlight-header .card-Details .card2 p,
+.package-section .package-contianer .package-summery .package-offer .package-card2 .highlight-header .package-card1 .details-header .card-Details .card2 p,
+.package-section .package-contianer .package-summery .package-offer .package-card1 .details-header .package-card2 .highlight-header .card-Details .card2 p,
+.package-section .package-contianer .package-summery .package-offer .package-card2 .highlight-header .package-card1 .card-head .card-Details .card2 p,
+.package-section .package-contianer .package-summery .package-offer .package-card1 .card-head .package-card2 .highlight-header .card-Details .card2 p,
+.package-section .package-contianer .package-summery .package-offer .package-card2 .highlight-header .card-Details .card2 p,
+.package-section .package-contianer .package-summery .package-offer .package-card2 .highlight-header .details-header .card-Details .card2 p,
+.package-section .package-contianer .package-summery .package-offer .package-card2 .details-header .highlight-header .card-Details .card2 p,
+.package-section .package-contianer .package-summery .package-offer .package-card2 .highlight-header .card-head .card-Details .card2 p,
+.package-section .package-contianer .package-summery .package-offer .package-card2 .card-head .highlight-header .card-Details .card2 p,
+.package-section .package-contianer .package-summery .package-offer .package-card2 .details-header .card-highlight .card1 p,
+.package-section .package-contianer .package-summery .package-offer .package-card2 .details-header .package-card-details .summary-details .card1 p,
+.package-section .package-contianer .package-summery .package-card-details .package-offer .package-card2 .details-header .summary-details .card1 p,
+.package-section .package-contianer .package-summery .package-offer .package-card2 .details-header .package-card1 .highlight-header .card-Details .card1 p,
+.package-section .package-contianer .package-summery .package-offer .package-card1 .highlight-header .package-card2 .details-header .card-Details .card1 p,
+.package-section .package-contianer .package-summery .package-offer .package-card2 .package-card1 .details-header .card-Details .card1 p,
+.package-section .package-contianer .package-summery .package-offer .package-card1 .package-card2 .details-header .card-Details .card1 p,
+.package-section .package-contianer .package-summery .package-offer .package-card2 .details-header .package-card1 .card-head .card-Details .card1 p,
+.package-section .package-contianer .package-summery .package-offer .package-card1 .card-head .package-card2 .details-header .card-Details .card1 p,
+.package-section .package-contianer .package-summery .package-offer .package-card2 .details-header .highlight-header .card-Details .card1 p,
+.package-section .package-contianer .package-summery .package-offer .package-card2 .highlight-header .details-header .card-Details .card1 p,
+.package-section .package-contianer .package-summery .package-offer .package-card2 .details-header .card-Details .card1 p,
+.package-section .package-contianer .package-summery .package-offer .package-card2 .details-header .card-head .card-Details .card1 p,
+.package-section .package-contianer .package-summery .package-offer .package-card2 .card-head .details-header .card-Details .card1 p,
+.package-section .package-contianer .package-summery .package-offer .package-card2 .details-header .card-highlight .card2 p,
+.package-section .package-contianer .package-summery .package-offer .package-card2 .details-header .package-card-details .summary-details .card2 p,
+.package-section .package-contianer .package-summery .package-card-details .package-offer .package-card2 .details-header .summary-details .card2 p,
+.package-section .package-contianer .package-summery .package-offer .package-card2 .details-header .package-card1 .highlight-header .card-Details .card2 p,
+.package-section .package-contianer .package-summery .package-offer .package-card1 .highlight-header .package-card2 .details-header .card-Details .card2 p,
+.package-section .package-contianer .package-summery .package-offer .package-card2 .package-card1 .details-header .card-Details .card2 p,
+.package-section .package-contianer .package-summery .package-offer .package-card1 .package-card2 .details-header .card-Details .card2 p,
+.package-section .package-contianer .package-summery .package-offer .package-card2 .details-header .package-card1 .card-head .card-Details .card2 p,
+.package-section .package-contianer .package-summery .package-offer .package-card1 .card-head .package-card2 .details-header .card-Details .card2 p,
+.package-section .package-contianer .package-summery .package-offer .package-card2 .details-header .highlight-header .card-Details .card2 p,
+.package-section .package-contianer .package-summery .package-offer .package-card2 .highlight-header .details-header .card-Details .card2 p,
+.package-section .package-contianer .package-summery .package-offer .package-card2 .details-header .card-Details .card2 p,
+.package-section .package-contianer .package-summery .package-offer .package-card2 .details-header .card-head .card-Details .card2 p,
+.package-section .package-contianer .package-summery .package-offer .package-card2 .card-head .details-header .card-Details .card2 p,
+.package-section .package-contianer .package-summery .package-offer .package-card2 .card-head .card-highlight .card1 p,
+.package-section .package-contianer .package-summery .package-offer .package-card2 .card-head .package-card-details .summary-details .card1 p,
+.package-section .package-contianer .package-summery .package-card-details .package-offer .package-card2 .card-head .summary-details .card1 p,
+.package-section .package-contianer .package-summery .package-offer .package-card2 .card-head .package-card1 .highlight-header .card-Details .card1 p,
+.package-section .package-contianer .package-summery .package-offer .package-card1 .highlight-header .package-card2 .card-head .card-Details .card1 p,
+.package-section .package-contianer .package-summery .package-offer .package-card2 .card-head .package-card1 .details-header .card-Details .card1 p,
+.package-section .package-contianer .package-summery .package-offer .package-card1 .details-header .package-card2 .card-head .card-Details .card1 p,
+.package-section .package-contianer .package-summery .package-offer .package-card2 .package-card1 .card-head .card-Details .card1 p,
+.package-section .package-contianer .package-summery .package-offer .package-card1 .package-card2 .card-head .card-Details .card1 p,
+.package-section .package-contianer .package-summery .package-offer .package-card2 .card-head .highlight-header .card-Details .card1 p,
+.package-section .package-contianer .package-summery .package-offer .package-card2 .highlight-header .card-head .card-Details .card1 p,
+.package-section .package-contianer .package-summery .package-offer .package-card2 .card-head .details-header .card-Details .card1 p,
+.package-section .package-contianer .package-summery .package-offer .package-card2 .details-header .card-head .card-Details .card1 p,
+.package-section .package-contianer .package-summery .package-offer .package-card2 .card-head .card-Details .card1 p,
+.package-section .package-contianer .package-summery .package-offer .package-card2 .card-head .card-highlight .card2 p,
+.package-section .package-contianer .package-summery .package-offer .package-card2 .card-head .package-card-details .summary-details .card2 p,
+.package-section .package-contianer .package-summery .package-card-details .package-offer .package-card2 .card-head .summary-details .card2 p,
+.package-section .package-contianer .package-summery .package-offer .package-card2 .card-head .package-card1 .highlight-header .card-Details .card2 p,
+.package-section .package-contianer .package-summery .package-offer .package-card1 .highlight-header .package-card2 .card-head .card-Details .card2 p,
+.package-section .package-contianer .package-summery .package-offer .package-card2 .card-head .package-card1 .details-header .card-Details .card2 p,
+.package-section .package-contianer .package-summery .package-offer .package-card1 .details-header .package-card2 .card-head .card-Details .card2 p,
+.package-section .package-contianer .package-summery .package-offer .package-card2 .package-card1 .card-head .card-Details .card2 p,
+.package-section .package-contianer .package-summery .package-offer .package-card1 .package-card2 .card-head .card-Details .card2 p,
+.package-section .package-contianer .package-summery .package-offer .package-card2 .card-head .highlight-header .card-Details .card2 p,
+.package-section .package-contianer .package-summery .package-offer .package-card2 .highlight-header .card-head .card-Details .card2 p,
+.package-section .package-contianer .package-summery .package-offer .package-card2 .card-head .details-header .card-Details .card2 p,
+.package-section .package-contianer .package-summery .package-offer .package-card2 .details-header .card-head .card-Details .card2 p,
+.package-section .package-contianer .package-summery .package-offer .package-card2 .card-head .card-Details .card2 p {
+  display: flex;
+  align-items: center;
+  font-family: "Mulish";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 15px;
+  color: #333333;
+}
+.package-section .package-contianer .package-summery .package-offer .package-card1 .highlight-header .card-Details,
+.package-section .package-contianer .package-summery .package-offer .package-card1 .details-header .card-Details,
+.package-section .package-contianer .package-summery .package-offer .package-card1 .card-head .card-Details,
+.package-section .package-contianer .package-summery .package-offer .package-card2 .highlight-header .card-Details,
+.package-section .package-contianer .package-summery .package-offer .package-card2 .details-header .card-Details,
+.package-section .package-contianer .package-summery .package-offer .package-card2 .card-head .card-Details {
   padding-bottom: 0px !important;
 }
-.card-Details .card1 {
+.package-section .package-contianer .package-summery .package-offer .package-card1 .highlight-header .card-Details .card1,
+.package-section .package-contianer .package-summery .package-offer .package-card1 .details-header .card-Details .card1,
+.package-section .package-contianer .package-summery .package-offer .package-card1 .card-head .card-Details .card1,
+.package-section .package-contianer .package-summery .package-offer .package-card2 .highlight-header .card-Details .card1,
+.package-section .package-contianer .package-summery .package-offer .package-card2 .details-header .card-Details .card1,
+.package-section .package-contianer .package-summery .package-offer .package-card2 .card-head .card-Details .card1 {
   display: flex;
   justify-content: center;
 }
-.card-Details .card1 .design {
+.package-section .package-contianer .package-summery .package-offer .package-card1 .highlight-header .card-Details .card1 .design,
+.package-section .package-contianer .package-summery .package-offer .package-card1 .details-header .card-Details .card1 .design,
+.package-section .package-contianer .package-summery .package-offer .package-card1 .card-head .card-Details .card1 .design,
+.package-section .package-contianer .package-summery .package-offer .package-card2 .highlight-header .card-Details .card1 .design,
+.package-section .package-contianer .package-summery .package-offer .package-card2 .details-header .card-Details .card1 .design,
+.package-section .package-contianer .package-summery .package-offer .package-card2 .card-head .card-Details .card1 .design {
   display: flex;
   flex-direction: column;
   height: 103px;
   width: 168px;
   justify-content: space-between;
 }
-.card-Details .card1 .design p {
+.package-section .package-contianer .package-summery .package-offer .package-card1 .highlight-header .card-Details .card1 .design p,
+.package-section .package-contianer .package-summery .package-offer .package-card1 .details-header .card-Details .card1 .design p,
+.package-section .package-contianer .package-summery .package-offer .package-card1 .card-head .card-Details .card1 .design p,
+.package-section .package-contianer .package-summery .package-offer .package-card2 .highlight-header .card-Details .card1 .design p,
+.package-section .package-contianer .package-summery .package-offer .package-card2 .details-header .card-Details .card1 .design p,
+.package-section .package-contianer .package-summery .package-offer .package-card2 .card-head .card-Details .card1 .design p {
   margin: 0;
 }
-.card-Details .card2 {
+.package-section .package-contianer .package-summery .package-offer .package-card1 .highlight-header .card-Details .card2,
+.package-section .package-contianer .package-summery .package-offer .package-card1 .details-header .card-Details .card2,
+.package-section .package-contianer .package-summery .package-offer .package-card1 .card-head .card-Details .card2,
+.package-section .package-contianer .package-summery .package-offer .package-card2 .highlight-header .card-Details .card2,
+.package-section .package-contianer .package-summery .package-offer .package-card2 .details-header .card-Details .card2,
+.package-section .package-contianer .package-summery .package-offer .package-card2 .card-head .card-Details .card2 {
   display: flex;
   width: 46%;
   height: 20px;
 }
-.card-Details .card2 p {
+.package-section .package-contianer .package-summery .package-offer .package-card1 .highlight-header .card-Details .card2 p,
+.package-section .package-contianer .package-summery .package-offer .package-card1 .details-header .card-Details .card2 p,
+.package-section .package-contianer .package-summery .package-offer .package-card1 .card-head .card-Details .card2 p,
+.package-section .package-contianer .package-summery .package-offer .package-card2 .highlight-header .card-Details .card2 p,
+.package-section .package-contianer .package-summery .package-offer .package-card2 .details-header .card-Details .card2 p,
+.package-section .package-contianer .package-summery .package-offer .package-card2 .card-head .card-Details .card2 p {
   width: 216px;
   font-family: "Mulish";
   font-weight: 400;
   font-size: 14px;
   line-height: 18px;
 }
-
-.package-card-details {
+.package-section .package-contianer .package-summery .package-card-details {
   width: 1110px;
   height: 550px;
 }
-
-.summary-details {
+.package-section .package-contianer .package-summery .package-card-details .summary-details {
   height: 405px !important;
   width: 1049px !important;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
-.summary-details .first-three {
+.package-section .package-contianer .package-summery .package-card-details .summary-details .first-three {
   display: flex;
   justify-content: space-between;
   height: 314px;
   border-bottom: 1px dashed #E0E0E0;
 }
-.summary-details .last-three {
+.package-section .package-contianer .package-summery .package-card-details .summary-details .last-three {
   display: flex;
   justify-content: space-between;
 }
-.summary-details .activity1 {
+.package-section .package-contianer .package-summery .package-card-details .summary-details .activity1 {
   height: 300px;
 }
-.summary-details .activity1 h6 {
+.package-section .package-contianer .package-summery .package-card-details .summary-details .activity1 h6 {
   color: #EC1F46;
   width: 122px;
   height: 16px;
@@ -748,21 +838,21 @@ ul.breadcrumb li a, li.breadcrumb li a {
   line-height: 16px;
   margin-bottom: 0;
 }
-.summary-details .activity1 .first {
+.package-section .package-contianer .package-summery .package-card-details .summary-details .activity1 .first {
   display: flex;
   flex-direction: column;
 }
-.summary-details .activity1 .first p {
+.package-section .package-contianer .package-summery .package-card-details .summary-details .activity1 .first p {
   align-items: center;
   display: flex;
   font-family: "Mulish";
   font-style: normal;
   line-height: 15px;
 }
-.summary-details .activity2 {
+.package-section .package-contianer .package-summery .package-card-details .summary-details .activity2 {
   height: 238px;
 }
-.summary-details .activity2 h6 {
+.package-section .package-contianer .package-summery .package-card-details .summary-details .activity2 h6 {
   color: #EC1F46;
   width: 240px;
   height: 16px;
@@ -772,21 +862,21 @@ ul.breadcrumb li a, li.breadcrumb li a {
   line-height: 16px;
   margin-bottom: 0;
 }
-.summary-details .activity2 .first {
+.package-section .package-contianer .package-summery .package-card-details .summary-details .activity2 .first {
   display: flex;
   flex-direction: column;
 }
-.summary-details .activity2 .first p {
+.package-section .package-contianer .package-summery .package-card-details .summary-details .activity2 .first p {
   align-items: center;
   display: flex;
   font-family: "Mulish";
   font-style: normal;
   line-height: 15px;
 }
-.summary-details .activity3 {
+.package-section .package-contianer .package-summery .package-card-details .summary-details .activity3 {
   height: 233px;
 }
-.summary-details .activity3 h6 {
+.package-section .package-contianer .package-summery .package-card-details .summary-details .activity3 h6 {
   color: #EC1F46;
   width: 240px;
   height: 16px;
@@ -796,22 +886,22 @@ ul.breadcrumb li a, li.breadcrumb li a {
   line-height: 16px;
   margin-bottom: 0;
 }
-.summary-details .activity3 .first {
+.package-section .package-contianer .package-summery .package-card-details .summary-details .activity3 .first {
   display: flex;
   flex-direction: column;
 }
-.summary-details .activity3 .first p {
+.package-section .package-contianer .package-summery .package-card-details .summary-details .activity3 .first p {
   align-items: center;
   display: flex;
   font-family: "Mulish";
   font-style: normal;
   line-height: 15px;
 }
-.summary-details .activity4 {
+.package-section .package-contianer .package-summery .package-card-details .summary-details .activity4 {
   height: 90px;
   width: 192px;
 }
-.summary-details .activity4 h6 {
+.package-section .package-contianer .package-summery .package-card-details .summary-details .activity4 h6 {
   color: #EC1F46;
   width: 122px;
   height: 16px;
@@ -821,21 +911,21 @@ ul.breadcrumb li a, li.breadcrumb li a {
   line-height: 16px;
   margin-bottom: 0;
 }
-.summary-details .activity4 .first {
+.package-section .package-contianer .package-summery .package-card-details .summary-details .activity4 .first {
   display: flex;
   flex-direction: column;
 }
-.summary-details .activity4 .first p {
+.package-section .package-contianer .package-summery .package-card-details .summary-details .activity4 .first p {
   align-items: center;
   display: flex;
   font-family: "Mulish";
   font-style: normal;
   line-height: 15px;
 }
-.summary-details .activity5 {
+.package-section .package-contianer .package-summery .package-card-details .summary-details .activity5 {
   height: 90px;
 }
-.summary-details .activity5 h6 {
+.package-section .package-contianer .package-summery .package-card-details .summary-details .activity5 h6 {
   color: #EC1F46;
   width: 122px;
   height: 16px;
@@ -845,21 +935,21 @@ ul.breadcrumb li a, li.breadcrumb li a {
   line-height: 16px;
   margin-bottom: 0;
 }
-.summary-details .activity5 .first {
+.package-section .package-contianer .package-summery .package-card-details .summary-details .activity5 .first {
   display: flex;
   flex-direction: column;
 }
-.summary-details .activity5 .first p {
+.package-section .package-contianer .package-summery .package-card-details .summary-details .activity5 .first p {
   align-items: center;
   display: flex;
   font-family: "Mulish";
   font-style: normal;
   line-height: 15px;
 }
-.summary-details .activity6 {
+.package-section .package-contianer .package-summery .package-card-details .summary-details .activity6 {
   height: 90px;
 }
-.summary-details .activity6 h6 {
+.package-section .package-contianer .package-summery .package-card-details .summary-details .activity6 h6 {
   color: #EC1F46;
   width: 240px;
   height: 16px;
@@ -869,11 +959,11 @@ ul.breadcrumb li a, li.breadcrumb li a {
   line-height: 16px;
   margin-bottom: 0;
 }
-.summary-details .activity6 .first {
+.package-section .package-contianer .package-summery .package-card-details .summary-details .activity6 .first {
   display: flex;
   flex-direction: column;
 }
-.summary-details .activity6 .first p {
+.package-section .package-contianer .package-summery .package-card-details .summary-details .activity6 .first p {
   align-items: center;
   display: flex;
   font-family: "Mulish";

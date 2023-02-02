@@ -1614,7 +1614,7 @@
 
             .holder {
                 background-color: $secondary-color;
-                width: 51%;
+                width: 70%;
                 height: 280px;
                 display: flex;
                 justify-content: center;
@@ -1627,12 +1627,38 @@
                     justify-content: center;
                     align-items: center;
                     flex-direction: column;
+                    padding: 70px;
+
+                    p {
+                        font-family: 'Mulish';
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 12px;
+                        line-height: 160%;
+                        /* or 19px */
+
+                        text-align: justify;
+                    }
+
+
+                    .Ellipse-container {
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        align-items: center;
+
+                        p {
+                            margin-top: 0;
+                        }
+                    }
+
+                    // .review-paragraph {
+                    //     height: 114px;
+                    // }
                 }
             }
 
-            .wrapp-review {
-                padding: 30px;
-            }
+
         }
     }
 }
@@ -1664,9 +1690,17 @@
         align-items: center;
         width: 100%;
         justify-content: center;
+        padding-left: 20px;
+        padding-right: 20px;
 
         .text {
-            width: 50%;
+            width: 30%;
+
+            span {
+                h2 {
+                    margin-top: 0;
+                }
+            }
         }
 
         .search {

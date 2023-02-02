@@ -1227,7 +1227,7 @@ $breakpoint arguments choices:
 }
 .guest-review-section .guest-wrapper .guest-card-style .holder {
   background-color: #FFFFFF;
-  width: 51%;
+  width: 70%;
   height: 280px;
   display: flex;
   justify-content: center;
@@ -1240,9 +1240,25 @@ $breakpoint arguments choices:
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  padding: 70px;
 }
-.guest-review-section .guest-wrapper .guest-card-style .wrapp-review {
-  padding: 30px;
+.guest-review-section .guest-wrapper .guest-card-style .holder .wrapp-review p {
+  font-family: "Mulish";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 160%;
+  /* or 19px */
+  text-align: justify;
+}
+.guest-review-section .guest-wrapper .guest-card-style .holder .wrapp-review .Ellipse-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.guest-review-section .guest-wrapper .guest-card-style .holder .wrapp-review .Ellipse-container p {
+  margin-top: 0;
 }
 
 .newsletter-section {
@@ -1260,9 +1276,14 @@ $breakpoint arguments choices:
   align-items: center;
   width: 100%;
   justify-content: center;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 .newsletter-section .news-wrapp .text {
-  width: 50%;
+  width: 30%;
+}
+.newsletter-section .news-wrapp .text span h2 {
+  margin-top: 0;
 }
 .newsletter-section .news-wrapp .search {
   display: flex;

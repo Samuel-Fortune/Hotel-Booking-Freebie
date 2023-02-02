@@ -223,7 +223,7 @@
 
     .hilton-section {
         display: flex;
-        justify-content: space-between;
+        gap: 20px;
         align-items: center;
 
         h3 {
@@ -279,6 +279,7 @@
         height: 55px;
         background-color: $primary-color;
         border-radius: 4px;
+        margin-bottom: 14px;
 
 
         .user {
@@ -2147,9 +2148,12 @@
             span {
                 p {
                     color: $footer-text-color;
+                    margin-top: 0;
+                    margin-bottom: 5px;
 
                     a {
                         color: $footer-text-color;
+
                     }
                 }
             }
@@ -2158,6 +2162,16 @@
                 display: flex;
                 justify-content: space-between;
                 align-items: center;
+
+                h4 {
+                    text-transform: uppercase;
+                    font-size: 15px;
+                }
+
+                span {
+                    gap: 10px;
+                    display: flex;
+                }
             }
         }
     }
@@ -2290,7 +2304,7 @@
         span {
             display: flex;
             justify-content: space-between;
-            gap: $smallest-sizing;
+            gap: 20px;
             width: 40%;
 
             p {

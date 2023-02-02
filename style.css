@@ -267,7 +267,7 @@ $breakpoint arguments choices:
 }
 .hotel-wrapper .hilton-section {
   display: flex;
-  justify-content: space-between;
+  gap: 20px;
   align-items: center;
 }
 .hotel-wrapper .hilton-section h3 {
@@ -312,6 +312,7 @@ $breakpoint arguments choices:
   height: 55px;
   background-color: #EC1F46;
   border-radius: 4px;
+  margin-bottom: 14px;
 }
 .hotel-wrapper .user-rating .user {
   font-style: normal;
@@ -1643,6 +1644,8 @@ $breakpoint arguments choices:
 }
 .footer-section .footer-holder .all-categories span p {
   color: #BDBDBD;
+  margin-top: 0;
+  margin-bottom: 5px;
 }
 .footer-section .footer-holder .all-categories span p a {
   color: #BDBDBD;
@@ -1651,6 +1654,14 @@ $breakpoint arguments choices:
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+.footer-section .footer-holder .all-categories .social-icons h4 {
+  text-transform: uppercase;
+  font-size: 15px;
+}
+.footer-section .footer-holder .all-categories .social-icons span {
+  gap: 10px;
+  display: flex;
 }
 .footer-section .contact-section {
   display: flex;
@@ -1740,7 +1751,7 @@ $breakpoint arguments choices:
 .footer-section .last-section span {
   display: flex;
   justify-content: space-between;
-  gap: 10px;
+  gap: 20px;
   width: 40%;
 }
 .footer-section .last-section span p {

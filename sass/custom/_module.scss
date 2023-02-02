@@ -996,10 +996,34 @@
 
                 .wrapp-image {
                     width: 49%;
+                    position: relative;
 
                     img {
                         height: 100%;
                         width: 100%;
+                    }
+
+                    span {
+                        background-color: $primary-color;
+                        color: $secondary-color;
+                        width: 95px;
+                        height: 30px;
+                        border: none;
+                        border-radius: 4px;
+                        left: 0;
+                        top: 20px;
+                        position: absolute;
+                        display: flex;
+                        justify-content: center;
+
+
+
+                        p {
+                            color: $secondary-color;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                        }
                     }
                 }
 
@@ -1089,6 +1113,8 @@
                                     color: $secondary-color;
                                     width: 50%;
                                     height: 40px;
+                                    border: none;
+                                    border-radius: 4px;
                                 }
                             }
                         }
@@ -1108,10 +1134,34 @@
 
                 .wrapp2-image {
 
+                    position: relative;
 
                     img {
                         height: 100%;
                         width: 100%;
+                    }
+
+                    span {
+                        background-color: $primary-color;
+                        color: $secondary-color;
+                        width: 95px;
+                        height: 30px;
+                        border: none;
+                        border-radius: 4px;
+                        left: 0;
+                        top: 20px;
+                        position: absolute;
+                        display: flex;
+                        justify-content: center;
+
+
+
+                        p {
+                            color: $secondary-color;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                        }
                     }
                 }
 
@@ -1202,6 +1252,8 @@
                                     color: $secondary-color;
                                     width: 50%;
                                     height: 40px;
+                                    border: none;
+                                    border-radius: 4px;
                                 }
                             }
                         }
@@ -1224,10 +1276,34 @@
 
                 .wrapp3-image {
 
+                    position: relative;
 
                     img {
                         height: 100%;
                         width: 100%;
+                    }
+
+                    span {
+                        background-color: $primary-color;
+                        color: $secondary-color;
+                        width: 95px;
+                        height: 30px;
+                        border: none;
+                        border-radius: 4px;
+                        left: 0;
+                        top: 20px;
+                        position: absolute;
+                        display: flex;
+                        justify-content: center;
+
+
+
+                        p {
+                            color: $secondary-color;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                        }
                     }
                 }
 
@@ -1318,6 +1394,8 @@
                                     color: $secondary-color;
                                     width: 50%;
                                     height: 40px;
+                                    border: none;
+                                    border-radius: 4px;
                                 }
                             }
                         }
@@ -1341,10 +1419,34 @@
 
                 .wrapp4-image {
                     height: 247px;
+                    position: relative;
 
                     img {
                         height: 100%;
                         width: 100%;
+                    }
+
+                    span {
+                        background-color: $primary-color;
+                        color: $secondary-color;
+                        width: 95px;
+                        height: 30px;
+                        border: none;
+                        border-radius: 4px;
+                        left: 0;
+                        top: 20px;
+                        position: absolute;
+                        display: flex;
+                        justify-content: center;
+
+
+
+                        p {
+                            color: $secondary-color;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                        }
                     }
                 }
 
@@ -1435,6 +1537,8 @@
                                     color: $secondary-color;
                                     width: 50%;
                                     height: 40px;
+                                    border: none;
+                                    border-radius: 4px;
                                 }
                             }
                         }
@@ -1458,10 +1562,34 @@
 
                 .wrapp5-image {
                     height: 247px;
+                    position: relative;
 
                     img {
                         height: 100%;
                         width: 100%;
+                    }
+
+                    span {
+                        background-color: $primary-color;
+                        color: $secondary-color;
+                        width: 95px;
+                        height: 30px;
+                        border: none;
+                        border-radius: 4px;
+                        left: 0;
+                        top: 20px;
+                        position: absolute;
+                        display: flex;
+                        justify-content: center;
+
+
+
+                        p {
+                            color: $secondary-color;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                        }
                     }
                 }
 
@@ -1552,6 +1680,8 @@
                                     color: $secondary-color;
                                     width: 50%;
                                     height: 40px;
+                                    border: none;
+                                    border-radius: 4px;
                                 }
                             }
                         }
@@ -1571,12 +1701,15 @@
 .guest-review-section {
     width: 100%;
     height: 100%;
+    padding-bottom: $largest-sizing;
 
     .guest-wrapper {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
         width: 100%;
+        gap: 7rem;
+        height: 100%;
 
         span {
             h2 {
@@ -1609,18 +1742,20 @@
                 img {
 
                     width: 100%;
+                    cursor: pointer;
                 }
             }
 
             .holder {
                 background-color: $secondary-color;
-                width: 70%;
+                width: 73%;
                 height: 280px;
                 display: flex;
                 justify-content: center;
                 align-items: center;
                 flex-direction: column;
                 padding-bottom: 20px;
+                position: relative;
 
                 .wrapp-review {
                     display: flex;
@@ -1646,15 +1781,36 @@
                         flex-direction: column;
                         justify-content: center;
                         align-items: center;
+                        position: relative;
+                        top: -25px;
 
                         p {
                             margin-top: 0;
                         }
                     }
 
-                    // .review-paragraph {
-                    //     height: 114px;
-                    // }
+                    .review-paragraph {
+                        width: 80%;
+                        position: relative;
+
+                        img:nth-of-type(1) {
+                            position: absolute;
+                            top: -120px;
+                            left: -40px;
+                        }
+
+                        img:nth-of-type(2) {
+                            position: relative;
+                            left: 490px;
+                            top: -147px;
+                        }
+
+
+                        p {
+                            margin-top: 0;
+
+                        }
+                    }
                 }
             }
 
@@ -1666,7 +1822,11 @@
 .newsletter-section {
     width: 100%;
     height: 100%;
-    background-image: url("./asset/images/Rectangle25.png");
+    background-image: url(/asset/images/Rectangle\ 25.png), linear-gradient(rgba(10, 34, 61, 0.8), rgba(10, 34, 61, 0.8));
+    background-blend-mode: overlay;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 94px 0 87px;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -1690,15 +1850,32 @@
         align-items: center;
         width: 100%;
         justify-content: center;
-        padding-left: 20px;
-        padding-right: 20px;
+
 
         .text {
-            width: 30%;
+            width: 38%;
+            color: $secondary-color;
 
             span {
                 h2 {
                     margin-top: 0;
+                    font-family: 'Mulish';
+                    font-style: normal;
+                    font-weight: 600;
+                    font-size: 36px;
+                    line-height: 45px;
+                    text-transform: uppercase;
+                }
+            }
+
+            span {
+                h3 {
+                    font-family: 'Mulish';
+                    font-style: normal;
+                    font-weight: 300;
+                    font-size: 24px;
+                    line-height: 30px;
+                    margin-bottom: 0;
                 }
             }
         }
@@ -1708,22 +1885,34 @@
 
 
             .search-input {
-                width: 350px;
-                color: $header-color;
-                background-color: $secondary-color;
-                border: none;
-                border-radius: 4px;
-                padding: 20px;
+                width: 350px !important;
+                color: $header-color !important;
+                background-color: $secondary-color !important;
+                border: none !important;
+                border-radius: 4px !important;
+                padding: 20px !important;
+
+                font-family: 'Mulish';
+                font-style: normal;
+                font-weight: 300;
+                font-size: 14px;
+                line-height: 18px;
 
             }
 
             .search-button {
-                background-color: $primary-color;
-                border: none;
-                cursor: pointer;
-                width: 20%;
-                padding: 0px;
-                border-radius: 0px 4px 4px 0px;
+                background-color: $primary-color !important;
+                border: none !important;
+                cursor: pointer !important;
+                width: 20% !important;
+                padding: 0px !important;
+                border-radius: 0px 4px 4px 0px !important;
+                font-family: 'Mulish';
+                font-style: normal;
+                font-weight: 700;
+                font-size: 12px;
+                line-height: 15px;
+                color: $secondary-color;
 
             }
         }
@@ -1736,10 +1925,383 @@
 .activities-section {
     width: 100%;
     height: 100%;
+    margin-bottom: 80px;
+    padding-top: 20px;
 
-    .activities-cards {
+    .activities-wrapp {
+        .activities-heading {
+            h3 {
+                font-family: 'Mulish';
+                font-style: normal;
+                font-weight: 700;
+                line-height: 30px;
+                text-transform: uppercase;
+            }
+        }
+
+        .activities-cards {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+
+            .card1 {
+                height: 255px;
+                width: 23%;
+
+                border-radius: 6px;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                background-image: url(/asset/icons/Rectangle\ 26.png);
+                background-blend-mode: overlay;
+                background-repeat: no-repeat;
+                background-size: cover;
+
+                span {
+                    padding-left: 30px;
+                    margin-top: 85px;
+
+                    h4 {
+                        color: $secondary-color;
+                        font-family: 'Mulish';
+                        font-style: normal;
+                        font-weight: 700;
+                        font-size: 16px !important;
+                        line-height: 20px;
+                        width: 145px;
+                    }
+
+
+                    button {
+
+                        background-color: $primary-color;
+                        color: $secondary-color;
+                        width: 100px;
+                        height: 30px;
+                        border-radius: 4px;
+                        border: none;
+                    }
+                }
+
+
+
+
+            }
+
+            .card2 {
+                height: 255px;
+                width: 23%;
+                border-radius: 6px;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                background-image: url(/asset/icons/Rectangle\ 27.png);
+                background-blend-mode: overlay;
+                background-repeat: no-repeat;
+                background-size: cover;
+
+                span {
+
+                    padding-left: 30px;
+                    margin-top: 85px;
+
+                    h4 {
+                        color: $secondary-color;
+                        font-family: 'Mulish';
+                        font-style: normal;
+                        font-weight: 700;
+                        font-size: 16px !important;
+                        line-height: 20px;
+                        width: 170px;
+                    }
+
+
+                    button {
+
+                        background-color: $primary-color;
+                        color: $secondary-color;
+                        width: 100px;
+                        height: 30px;
+                        border-radius: 4px;
+                        border: none;
+                    }
+                }
+
+            }
+
+            .card3 {
+                height: 255px;
+                width: 23%;
+                border-radius: 6px;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                background-image: url(/asset/icons/Rectangle\ 28.png);
+                background-blend-mode: overlay;
+                background-repeat: no-repeat;
+                background-size: cover;
+
+                span {
+
+                    padding-left: 30px;
+                    margin-top: 65px;
+
+                    h4 {
+                        color: $secondary-color;
+                        font-family: 'Mulish';
+                        font-style: normal;
+                        font-weight: 700;
+                        font-size: 16px !important;
+                        line-height: 20px;
+                        width: 170px;
+                    }
+
+
+                    button {
+
+                        background-color: $primary-color;
+                        color: $secondary-color;
+                        width: 100px;
+                        height: 30px;
+                        border-radius: 4px;
+                        border: none;
+                    }
+                }
+
+
+            }
+
+            .card4 {
+                height: 255px;
+                width: 23%;
+                border-radius: 6px;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                background-image: url(/asset/icons/Rectangle\ 29.png);
+                background-blend-mode: overlay;
+                background-repeat: no-repeat;
+                background-size: cover;
+
+                span {
+
+                    padding-left: 30px;
+                    margin-top: 85px;
+
+                    h4 {
+                        color: $secondary-color;
+                        font-family: 'Mulish';
+                        font-style: normal;
+                        font-weight: 700;
+                        font-size: 16px !important;
+                        line-height: 20px;
+                        width: 210px;
+                    }
+
+
+                    button {
+
+                        background-color: $primary-color;
+                        color: $secondary-color;
+                        width: 100px;
+                        height: 30px;
+                        border-radius: 4px;
+                        border: none;
+                    }
+                }
+
+            }
+        }
+
+    }
+
+}
+
+.footer-section {
+    background-color: $tertiary-color;
+    width: 100%;
+    height: 100%;
+
+    .footer-holder {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        padding-top: 50px;
+
+
+        .best-tour-plan2 {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .all-categories {
+
+            span {
+                h4 {
+
+                    color: $secondary-color;
+                }
+            }
+
+            span {
+                p {
+                    color: $footer-text-color;
+
+                    a {
+                        color: $footer-text-color;
+                    }
+                }
+            }
+
+            .social-icons {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+            }
+        }
+    }
+
+    .contact-section {
         display: flex;
         justify-content: space-between;
         width: 100%;
+
+        .details {
+            width: 50%;
+
+            span {
+                color: $secondary-color;
+
+                h4 {
+                    color: $secondary-color;
+
+                    p {
+                        a {
+                            color: $footer-text-color;
+                        }
+                    }
+                }
+            }
+        }
+
+        span {
+            p {
+                color: $footer-text-color;
+                display: flex;
+                align-items: center;
+
+                img {
+
+                    a {
+                        color: $footer-text-color;
+                    }
+                }
+            }
+        }
+    }
+
+    .contact-form-section {
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+        justify-content: space-between;
+
+        span {
+            h4 {
+                color: $secondary-color;
+            }
+        }
+
+        .contact-form {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            gap: $medium-sizing;
+
+            .first-form {
+                width: 100%;
+                display: flex;
+                justify-content: space-between;
+
+                .name-input {
+                    width: 255px;
+                    height: 50px;
+                    background-color: $secondary-color;
+                    border-radius: 4px;
+                    padding-left: 20px;
+                }
+
+                .number-input {
+                    @extend .name-input;
+
+                }
+
+
+            }
+
+            .second-form {
+                width: 100%;
+                display: flex;
+
+                .message-input {
+                    width: 100%;
+                    height: 123px;
+                    padding-left: 20px;
+
+                }
+            }
+
+            .submit-button {
+                display: flex;
+                width: 100%;
+                justify-content: space-between;
+
+                button {
+
+                    background-color: $primary-color;
+                    color: $secondary-color;
+                    width: 160px;
+                    height: 50px;
+                    border-radius: 4px;
+                    border: none;
+                }
+
+                p {
+                    color: $secondary-color;
+                }
+
+            }
+
+
+        }
+
+
+    }
+
+    .last-section {
+        display: flex;
+        justify-content: flex-end;
+        width: 100%;
+        margin-top: $largest-sizing;
+        padding-bottom: 20px;
+
+        span {
+            display: flex;
+            justify-content: space-between;
+            gap: $smallest-sizing;
+            width: 40%;
+
+            p {
+                color: $secondary-color;
+            }
+        }
+
+        span {
+            display: flex;
+            justify-content: flex-end;
+        }
+
     }
 }

@@ -120,7 +120,6 @@ $breakpoint arguments choices:
 .package-details-wrapper {
   border-radius: 8px;
   width: 100%;
-  height: 100% !important;
 }
 
 .nav-bg {
@@ -259,11 +258,12 @@ $breakpoint arguments choices:
   width: 100%;
   align-items: center;
   margin-bottom: 8px;
-  margin-top: 30px;
+  margin-top: 40px;
 }
 .hotel-wrapper .stars {
   width: 100%;
   display: flex;
+  margin-bottom: 4px;
 }
 .hotel-wrapper .hilton-section {
   display: flex;
@@ -279,10 +279,10 @@ $breakpoint arguments choices:
 }
 .hotel-wrapper .hilton-section span {
   width: 70px;
-  height: 29px;
+  height: 20px;
   background: #EC1F46;
-  border-radius: 3px;
   display: flex;
+  align-items: center;
   justify-content: center;
 }
 .hotel-wrapper .hilton-section span p {
@@ -290,6 +290,8 @@ $breakpoint arguments choices:
   font-size: 10px;
   line-height: 13px;
   color: #FFFFFF;
+  display: flex;
+  align-items: center;
 }
 .hotel-wrapper .half-board {
   width: 100%;
@@ -302,14 +304,14 @@ $breakpoint arguments choices:
   font-size: 12px;
   line-height: 15px;
   color: #333333;
-  margin-top: 8px;
+  margin-top: 2px;
 }
 .hotel-wrapper .user-rating {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 80px;
-  height: 55px;
+  width: 65px;
+  height: 45px;
   background-color: #EC1F46;
   border-radius: 4px;
   margin-bottom: 14px;
@@ -321,6 +323,13 @@ $breakpoint arguments choices:
   line-height: 10px;
   color: #FFFFFF;
 }
+.hotel-wrapper .user-rating .user p {
+  font-family: "Mulish";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 8px;
+  line-height: 10px;
+}
 .hotel-wrapper .user-rating .user .rate {
   width: 100%;
   height: 18px;
@@ -329,20 +338,26 @@ $breakpoint arguments choices:
   justify-content: center;
 }
 .hotel-wrapper .user-rating .user .rate p {
-  font-size: 14px;
-  font-weight: 700;
-  line-height: 18px;
   font-family: "Mulish";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 18px;
+  margin-top: 3px;
 }
 .hotel-wrapper .slider {
   display: flex;
   justify-content: space-between;
   width: 100%;
+  flex-direction: row;
 }
 .hotel-wrapper .slider .beach {
   background: linear-gradient(180deg, rgba(0, 122, 223, 0.48) 0%, rgba(255, 255, 255, 0.128) 100%);
   border-radius: 8px;
   width: 64%;
+}
+.hotel-wrapper .slider .beach img {
+  width: 100%;
 }
 .hotel-wrapper .view-options {
   background-color: #0A223D;
@@ -444,6 +459,7 @@ $breakpoint arguments choices:
 .package-section {
   background-color: #F5FAFE;
   margin-top: 40px;
+  margin-bottom: 60px;
 }
 .package-section .package-contianer {
   display: flex;
@@ -460,6 +476,10 @@ $breakpoint arguments choices:
 }
 .package-section .package-contianer .package-menu p:first-of-type a:first-of-type {
   color: #EC1F46 !important;
+  border-bottom: 3px solid;
+  padding-bottom: 2px;
+  height: 30px;
+  display: flex;
 }
 .package-section .package-contianer .package-menu p {
   color: #333333;
@@ -468,16 +488,18 @@ $breakpoint arguments choices:
   font-weight: 700;
   font-size: 14px;
   line-height: 18px;
+  height: 30px;
 }
 .package-section .package-contianer .package-summery {
   width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  gap: 24px;
+  gap: 36px;
 }
 .package-section .package-contianer .package-summery h3 {
   margin-bottom: 0;
+  margin-top: 30px;
 }
 .package-section .package-contianer .package-summery .package-offer {
   display: flex;
@@ -508,7 +530,7 @@ $breakpoint arguments choices:
 .package-section .package-contianer .package-summery .package-offer .package-card1 .card-highlight, .package-section .package-contianer .package-summery .package-offer .package-card1 .package-card-details .card-head .card-Details, .package-section .package-contianer .package-summery .package-card-details .card-head .package-offer .package-card1 .card-Details {
   display: flex;
   justify-content: space-between;
-  width: 479px;
+  width: 90%;
   height: 96px;
   margin-left: 20px;
   padding-top: 20px;
@@ -570,10 +592,15 @@ $breakpoint arguments choices:
 }
 .package-section .package-contianer .package-summery .package-offer .package-card2 .card-Details .card1 .design p {
   margin: 0;
+  font-family: "Mulish";
+  font-style: normal;
+  font-weight: 400;
+  line-height: 15px;
 }
 .package-section .package-contianer .package-summery .package-offer .package-card2 .card-Details .card2 {
   display: flex;
   width: 46%;
+  height: 18px;
 }
 .package-section .package-contianer .package-summery .package-offer .package-card2 .card-Details .card2 p {
   margin-top: 0;
@@ -581,11 +608,15 @@ $breakpoint arguments choices:
   font-weight: 400;
   font-size: 14px;
   line-height: 18px;
+  height: 100%;
+  display: flex;
+  align-items: center;
 }
 .package-section .package-contianer .package-summery .package-card-details {
   width: 100%;
   background-color: #FFFFFF;
   height: 34rem;
+  padding-bottom: 24px;
 }
 .package-section .package-contianer .package-summery .package-card-details .card-head {
   background-color: #0A223D;
@@ -650,6 +681,7 @@ $breakpoint arguments choices:
 .package-section .package-contianer .package-summery .package-card-details .summary-details .last-three {
   display: flex;
   justify-content: space-between;
+  height: 165px;
 }
 .package-section .package-contianer .package-summery .package-card-details .summary-details .activity1 {
   height: 300px;
@@ -813,6 +845,15 @@ $breakpoint arguments choices:
   justify-content: center;
   width: 100%;
 }
+.other-packages-section .other-package-wrapper .other-package-header h2 {
+  font-family: "Mulish";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 45px;
+  text-align: center;
+  text-transform: uppercase;
+}
 .other-packages-section .other-package-wrapper .trip-advisor-wrapper {
   width: 100%;
   display: flex;
@@ -826,11 +867,12 @@ $breakpoint arguments choices:
   display: flex;
   width: 65%;
   flex-direction: row;
-  border-radius: 8px 8px 8px 8px;
+  border: 1px;
 }
 .other-packages-section .other-package-wrapper .trip-advisor-wrapper .wrapp1 .wrapp-image {
   width: 49%;
   position: relative;
+  border-radius: 8px 0px 0px 8px;
 }
 .other-packages-section .other-package-wrapper .trip-advisor-wrapper .wrapp1 .wrapp-image img {
   height: 100%;
@@ -841,8 +883,7 @@ $breakpoint arguments choices:
   color: #FFFFFF;
   width: 95px;
   height: 30px;
-  border: none;
-  border-radius: 4px;
+  border: 1px;
   left: 0;
   top: 20px;
   position: absolute;
@@ -859,6 +900,7 @@ $breakpoint arguments choices:
   width: 54%;
   background-color: #0A223D;
   color: #FFFFFF;
+  border-radius: 0px 8px 8px 0px;
 }
 .other-packages-section .other-package-wrapper .trip-advisor-wrapper .wrapp1 .advisor-style .style-wrapper {
   padding-left: 50px;
@@ -875,6 +917,9 @@ $breakpoint arguments choices:
 .other-packages-section .other-package-wrapper .trip-advisor-wrapper .wrapp1 .advisor-style .style-wrapper span .person-room p:nth-of-type(3) {
   margin-top: 0;
 }
+.other-packages-section .other-package-wrapper .trip-advisor-wrapper .wrapp1 .advisor-style .style-wrapper span .person-room p:nth-of-type(3) {
+  margin-bottom: 20px !important;
+}
 .other-packages-section .other-package-wrapper .trip-advisor-wrapper .wrapp1 .advisor-style .style-wrapper span .person-room p {
   font-family: "Mulish";
   font-style: normal;
@@ -883,6 +928,10 @@ $breakpoint arguments choices:
   line-height: 160.6%;
   display: flex;
   align-items: center;
+  margin-bottom: 0;
+  padding-bottom: 0px;
+}
+.other-packages-section .other-package-wrapper .trip-advisor-wrapper .wrapp1 .advisor-style .style-wrapper span .person-room p a {
   margin-bottom: 0;
 }
 .other-packages-section .other-package-wrapper .trip-advisor-wrapper .wrapp1 .advisor-style .style-wrapper span p {
@@ -894,7 +943,7 @@ $breakpoint arguments choices:
   display: flex;
   align-items: center;
   margin-bottom: 40px;
-  padding-bottom: 19px;
+  padding-top: 8px;
 }
 .other-packages-section .other-package-wrapper .trip-advisor-wrapper .wrapp1 .advisor-style .style-wrapper span .book-now {
   display: flex;
@@ -921,10 +970,11 @@ $breakpoint arguments choices:
   display: flex;
   width: 33%;
   flex-direction: column;
-  border-radius: 8px 8px 8px 8px;
+  border: 1px;
 }
 .other-packages-section .other-package-wrapper .trip-advisor-wrapper .wrapp2 .wrapp2-image {
   position: relative;
+  border-radius: 8px 8px 0px 0px;
 }
 .other-packages-section .other-package-wrapper .trip-advisor-wrapper .wrapp2 .wrapp2-image img {
   height: 100%;
@@ -933,15 +983,16 @@ $breakpoint arguments choices:
 .other-packages-section .other-package-wrapper .trip-advisor-wrapper .wrapp2 .wrapp2-image span {
   background-color: #EC1F46;
   color: #FFFFFF;
-  width: 95px;
-  height: 30px;
+  width: 90px;
+  height: 18px;
   border: none;
-  border-radius: 4px;
+  border-radius: 0px 4px 4px 0px;
   left: 0;
   top: 20px;
   position: absolute;
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 .other-packages-section .other-package-wrapper .trip-advisor-wrapper .wrapp2 .wrapp2-image span p {
   color: #FFFFFF;
@@ -954,6 +1005,7 @@ $breakpoint arguments choices:
   height: 100%;
   background-color: #0A223D;
   color: #FFFFFF;
+  border-radius: 0px 0px 8px 8px;
 }
 .other-packages-section .other-package-wrapper .trip-advisor-wrapper .wrapp2 .advisor-style2 .style-wrapper {
   padding-left: 30px;
@@ -994,7 +1046,6 @@ $breakpoint arguments choices:
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-top: 10px;
 }
 .other-packages-section .other-package-wrapper .trip-advisor-wrapper .wrapp2 .advisor-style2 .style-wrapper span .book-now span .slashed {
   text-decoration: line-through;
@@ -1015,12 +1066,11 @@ $breakpoint arguments choices:
   display: flex;
   width: 30%;
   flex-direction: column;
-  background-color: #0A223D;
-  border-radius: 8px 8px 8px 8px;
-  height: 100%;
+  border: 1px;
 }
 .other-packages-section .other-package-wrapper .trip-advisor-wrapper .wrapp3 .wrapp3-image {
   position: relative;
+  border-radius: 8px 8px 0px 0px;
 }
 .other-packages-section .other-package-wrapper .trip-advisor-wrapper .wrapp3 .wrapp3-image img {
   height: 100%;
@@ -1029,15 +1079,16 @@ $breakpoint arguments choices:
 .other-packages-section .other-package-wrapper .trip-advisor-wrapper .wrapp3 .wrapp3-image span {
   background-color: #EC1F46;
   color: #FFFFFF;
-  width: 95px;
-  height: 30px;
+  width: 90px;
+  height: 18px;
   border: none;
-  border-radius: 4px;
+  border-radius: 0px 4px 4px 0px;
   left: 0;
   top: 20px;
   position: absolute;
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 .other-packages-section .other-package-wrapper .trip-advisor-wrapper .wrapp3 .wrapp3-image span p {
   color: #FFFFFF;
@@ -1050,6 +1101,7 @@ $breakpoint arguments choices:
   height: 100%;
   background-color: #0A223D;
   color: #FFFFFF;
+  border-radius: 0px 0px 8px 8px;
 }
 .other-packages-section .other-package-wrapper .trip-advisor-wrapper .wrapp3 .advisor-style3 .style-wrapper {
   padding-left: 30px;
@@ -1090,7 +1142,6 @@ $breakpoint arguments choices:
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-top: 10px;
 }
 .other-packages-section .other-package-wrapper .trip-advisor-wrapper .wrapp3 .advisor-style3 .style-wrapper span .book-now span .slashed {
   text-decoration: line-through;
@@ -1111,13 +1162,12 @@ $breakpoint arguments choices:
   display: flex;
   width: 33%;
   flex-direction: column;
-  background-color: #0A223D;
-  border-radius: 8px 8px 8px 8px;
-  height: 100%;
+  border: 1px;
 }
 .other-packages-section .other-package-wrapper .trip-advisor-wrapper .wrapp4 .wrapp4-image {
   height: 247px;
   position: relative;
+  border-radius: 8px 8px 0px 0px;
 }
 .other-packages-section .other-package-wrapper .trip-advisor-wrapper .wrapp4 .wrapp4-image img {
   height: 100%;
@@ -1126,15 +1176,16 @@ $breakpoint arguments choices:
 .other-packages-section .other-package-wrapper .trip-advisor-wrapper .wrapp4 .wrapp4-image span {
   background-color: #EC1F46;
   color: #FFFFFF;
-  width: 95px;
-  height: 30px;
+  width: 90px;
+  height: 18px;
   border: none;
-  border-radius: 4px;
+  border-radius: 0px 4px 4px 0px;
   left: 0;
   top: 20px;
   position: absolute;
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 .other-packages-section .other-package-wrapper .trip-advisor-wrapper .wrapp4 .wrapp4-image span p {
   color: #FFFFFF;
@@ -1147,6 +1198,7 @@ $breakpoint arguments choices:
   height: 100%;
   background-color: #0A223D;
   color: #FFFFFF;
+  border-radius: 0px 0px 8px 8px;
 }
 .other-packages-section .other-package-wrapper .trip-advisor-wrapper .wrapp4 .advisor-style4 .style-wrapper {
   padding-left: 30px;
@@ -1187,7 +1239,6 @@ $breakpoint arguments choices:
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-top: 10px;
 }
 .other-packages-section .other-package-wrapper .trip-advisor-wrapper .wrapp4 .advisor-style4 .style-wrapper span .book-now span .slashed {
   text-decoration: line-through;
@@ -1208,13 +1259,12 @@ $breakpoint arguments choices:
   display: flex;
   width: 33%;
   flex-direction: column;
-  background-color: #0A223D;
-  border-radius: 8px 8px 8px 8px;
-  height: 100%;
+  border: 1px;
 }
 .other-packages-section .other-package-wrapper .trip-advisor-wrapper .wrapp5 .wrapp5-image {
   height: 247px;
   position: relative;
+  border-radius: 8px 8px 0px 0px;
 }
 .other-packages-section .other-package-wrapper .trip-advisor-wrapper .wrapp5 .wrapp5-image img {
   height: 100%;
@@ -1223,15 +1273,16 @@ $breakpoint arguments choices:
 .other-packages-section .other-package-wrapper .trip-advisor-wrapper .wrapp5 .wrapp5-image span {
   background-color: #EC1F46;
   color: #FFFFFF;
-  width: 95px;
-  height: 30px;
+  width: 90px;
+  height: 18px;
   border: none;
-  border-radius: 4px;
+  border-radius: 0px 4px 4px 0px;
   left: 0;
   top: 20px;
   position: absolute;
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 .other-packages-section .other-package-wrapper .trip-advisor-wrapper .wrapp5 .wrapp5-image span p {
   color: #FFFFFF;
@@ -1244,6 +1295,7 @@ $breakpoint arguments choices:
   height: 100%;
   background-color: #0A223D;
   color: #FFFFFF;
+  border-radius: 0px 0px 8px 8px;
 }
 .other-packages-section .other-package-wrapper .trip-advisor-wrapper .wrapp5 .advisor-style5 .style-wrapper {
   padding-left: 30px;
@@ -1284,7 +1336,6 @@ $breakpoint arguments choices:
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-top: 10px;
 }
 .other-packages-section .other-package-wrapper .trip-advisor-wrapper .wrapp5 .advisor-style5 .style-wrapper span .book-now span .slashed {
   text-decoration: line-through;
@@ -1305,7 +1356,7 @@ $breakpoint arguments choices:
 .guest-review-section {
   width: 100%;
   height: 100%;
-  padding-bottom: 36px;
+  padding-bottom: 70px;
 }
 .guest-review-section .guest-wrapper {
   display: flex;
@@ -1347,12 +1398,12 @@ $breakpoint arguments choices:
 .guest-review-section .guest-wrapper .guest-card-style .holder {
   background-color: #FFFFFF;
   width: 73%;
-  height: 280px;
+  height: 234px;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  padding-bottom: 20px;
+  padding-bottom: 40px;
   position: relative;
 }
 .guest-review-section .guest-wrapper .guest-card-style .holder .wrapp-review {
@@ -1377,14 +1428,32 @@ $breakpoint arguments choices:
   justify-content: center;
   align-items: center;
   position: relative;
-  top: -25px;
+  top: 30px;
 }
-.guest-review-section .guest-wrapper .guest-card-style .holder .wrapp-review .Ellipse-container p {
-  margin-top: 0;
+.guest-review-section .guest-wrapper .guest-card-style .holder .wrapp-review .Ellipse-container p:nth-of-type(1) {
+  font-family: "Mulish";
+  font-style: normal;
+  margin-bottom: 0;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 15px;
+  /* identical to box height */
+  color: #EC1F46;
+}
+.guest-review-section .guest-wrapper .guest-card-style .holder .wrapp-review .Ellipse-container p:nth-of-type(2) {
+  margin-bottom: 2px;
+  font-family: "Mulish";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 13px;
 }
 .guest-review-section .guest-wrapper .guest-card-style .holder .wrapp-review .review-paragraph {
   width: 80%;
   position: relative;
+  height: 114px;
+  padding-bottom: 80px;
+  padding-top: 60px;
 }
 .guest-review-section .guest-wrapper .guest-card-style .holder .wrapp-review .review-paragraph img:nth-of-type(1) {
   position: absolute;
@@ -1449,13 +1518,15 @@ $breakpoint arguments choices:
   color: #333333 !important;
   background-color: #FFFFFF !important;
   border: none !important;
-  border-radius: 4px !important;
+  border-radius: 4px 0px 0px 4px !important;
   padding: 20px !important;
   font-family: "Mulish";
   font-style: normal;
   font-weight: 300;
   font-size: 14px;
   line-height: 18px;
+  /* Gray 4 */
+  color: #BDBDBD;
 }
 .newsletter-section .news-wrapp .search .search-button {
   background-color: #EC1F46 !important;
@@ -1476,7 +1547,9 @@ $breakpoint arguments choices:
   width: 100%;
   height: 100%;
   margin-bottom: 80px;
-  padding-top: 20px;
+}
+.activities-section .activities-wrapp {
+  margin-top: 60px;
 }
 .activities-section .activities-wrapp .activities-heading h3 {
   font-family: "Mulish";
@@ -1489,6 +1562,7 @@ $breakpoint arguments choices:
   display: flex;
   justify-content: space-between;
   width: 100%;
+  margin-top: 73px;
 }
 .activities-section .activities-wrapp .activities-cards .card1 {
   height: 255px;
@@ -1570,7 +1644,7 @@ $breakpoint arguments choices:
 }
 .activities-section .activities-wrapp .activities-cards .card3 span {
   padding-left: 30px;
-  margin-top: 65px;
+  margin-top: 85px;
 }
 .activities-section .activities-wrapp .activities-cards .card3 span h4 {
   color: #FFFFFF;
@@ -1715,6 +1789,15 @@ $breakpoint arguments choices:
   background-color: #FFFFFF;
   border-radius: 4px;
   padding-left: 20px;
+  border: none;
+  font-family: "Mulish";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 15px;
+  /* identical to box height */
+  /* Gray 4 */
+  color: #BDBDBD;
 }
 .footer-section .contact-form-section .contact-form .second-form {
   width: 100%;
@@ -1724,6 +1807,16 @@ $breakpoint arguments choices:
   width: 100%;
   height: 123px;
   padding-left: 20px;
+  border-radius: 4px;
+  border: none;
+  font-family: "Mulish";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 15px;
+  /* identical to box height */
+  /* Gray 4 */
+  color: #BDBDBD;
 }
 .footer-section .contact-form-section .contact-form .submit-button {
   display: flex;

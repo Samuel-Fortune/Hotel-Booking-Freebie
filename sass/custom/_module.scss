@@ -211,13 +211,14 @@
         width: 100%;
         align-items: center;
         margin-bottom: 8px;
-        margin-top: 30px;
+        margin-top: 40px;
 
     }
 
     .stars {
         width: 100%;
         display: flex;
+        margin-bottom: 4px;
 
     }
 
@@ -238,10 +239,10 @@
 
         span {
             width: 70px;
-            height: 29px;
+            height: 20px;
             background: #EC1F46;
-            border-radius: 3px;
             display: flex;
+            align-items: center;
             justify-content: center;
 
             p {
@@ -250,6 +251,9 @@
                 font-size: $smallest-sizing;
                 line-height: 13px;
                 color: $secondary-color;
+                display: flex;
+
+                align-items: center;
             }
         }
     }
@@ -265,7 +269,7 @@
             font-size: $smaller-sizing;
             line-height: calc($medium-sizing + 1px);
             color: $header-color;
-            margin-top: 8px;
+            margin-top: 2px;
 
         }
 
@@ -275,8 +279,8 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-        width: 80px;
-        height: 55px;
+        width: 65px;
+        height: 45px;
         background-color: $primary-color;
         border-radius: 4px;
         margin-bottom: 14px;
@@ -289,6 +293,14 @@
             line-height: $smallest-sizing;
             color: $secondary-color;
 
+            p {
+                font-family: 'Mulish';
+                font-style: normal;
+                font-weight: 600;
+                font-size: 8px;
+                line-height: 10px;
+            }
+
             .rate {
                 width: 100%;
                 height: 18px;
@@ -297,10 +309,12 @@
                 justify-content: center;
 
                 p {
-                    font-size: $medium-sizing;
-                    font-weight: 700;
-                    line-height: 18px;
                     font-family: 'Mulish';
+                    font-style: normal;
+                    font-weight: 700;
+                    font-size: $medium-sizing;
+                    line-height: 18px;
+                    margin-top: 3px;
                 }
             }
         }
@@ -310,12 +324,17 @@
         display: flex;
         justify-content: space-between;
         width: 100%;
+        flex-direction: row;
 
         .beach {
 
             background: linear-gradient(180deg, rgba(0, 122, 223, 0.48) 0%, rgba(255, 255, 255, 0.128) 100%);
             border-radius: calc($smallest-sizing - 2px);
             width: 64%;
+
+            img {
+                width: 100%;
+            }
         }
     }
 
@@ -466,6 +485,7 @@
     @extend .wrapper;
     background-color: $main-bg-color;
     margin-top: 40px;
+    margin-bottom: 60px;
 
     .package-contianer {
         display: flex;
@@ -484,8 +504,13 @@
 
                 color: $primary-color !important;
 
+
                 a:first-of-type {
                     color: $primary-color !important;
+                    border-bottom: 3px solid;
+                    padding-bottom: 2px;
+                    height: 30px;
+                    display: flex;
                 }
             }
 
@@ -500,6 +525,7 @@
                 font-weight: 700;
                 font-size: $medium-sizing;
                 line-height: $Large-sizing;
+                height: 30px;
 
 
             }
@@ -513,10 +539,11 @@
             flex-direction: column;
             justify-content: space-between;
 
-            gap: $larger-sizing;
+            gap: $largest-sizing;
 
             h3 {
                 margin-bottom: 0;
+                margin-top: 30px;
             }
 
             .package-offer {
@@ -557,7 +584,7 @@
                     .card-highlight {
                         display: flex;
                         justify-content: space-between;
-                        width: 479px;
+                        width: 90%;
                         height: 96px;
                         margin-left: calc($larger-sizing - 4px);
                         padding-top: calc($larger-sizing - 4px);
@@ -637,6 +664,10 @@
 
                                 p {
                                     margin: 0;
+                                    font-family: 'Mulish';
+                                    font-style: normal;
+                                    font-weight: 400;
+                                    line-height: 15px;
                                 }
                             }
 
@@ -645,6 +676,7 @@
                         .card2 {
                             display: flex;
                             width: 46%;
+                            height: 18px;
 
 
                             p {
@@ -654,6 +686,9 @@
                                 font-weight: 400;
                                 font-size: $medium-sizing;
                                 line-height: $Large-sizing;
+                                height: 100%;
+                                display: flex;
+                                align-items: center;
 
                             }
 
@@ -668,6 +703,7 @@
                 width: 100%;
                 background-color: $secondary-color;
                 height: 34rem;
+                padding-bottom: $larger-sizing;
 
 
                 .card-head {
@@ -763,6 +799,7 @@
                     .last-three {
                         display: flex;
                         justify-content: space-between;
+                        height: 165px;
                     }
 
                     .activity1 {
@@ -972,6 +1009,16 @@
             justify-content: center;
             width: 100%;
 
+            h2 {
+                font-family: 'Mulish';
+                font-style: normal;
+                font-weight: 700;
+                font-size: $largest-sizing;
+                line-height: 45px;
+                text-align: center;
+                text-transform: uppercase;
+            }
+
         }
 
 
@@ -991,13 +1038,15 @@
                 display: flex;
                 width: 65%;
                 flex-direction: row;
-                border-radius: 8px 8px 8px 8px;
+                border: 1px;
+
 
 
 
                 .wrapp-image {
                     width: 49%;
                     position: relative;
+                    border-radius: 8px 0px 0px 8px;
 
                     img {
                         height: 100%;
@@ -1009,8 +1058,7 @@
                         color: $secondary-color;
                         width: 95px;
                         height: 30px;
-                        border: none;
-                        border-radius: 4px;
+                        border: 1px;
                         left: 0;
                         top: 20px;
                         position: absolute;
@@ -1033,6 +1081,7 @@
                     width: 54%;
                     background-color: $tertiary-color;
                     color: $secondary-color;
+                    border-radius: 0px 8px 8px 0px;
 
                     .style-wrapper {
                         padding-left: 50px;
@@ -1050,9 +1099,15 @@
 
                             .person-room {
 
+
                                 p:nth-of-type(2),
                                 p:nth-of-type(3) {
                                     margin-top: 0;
+
+                                }
+
+                                p:nth-of-type(3) {
+                                    margin-bottom: 20px !important;
                                 }
 
                                 p {
@@ -1064,6 +1119,11 @@
                                     display: flex;
                                     align-items: center;
                                     margin-bottom: 0;
+                                    padding-bottom: 0px;
+
+                                    a {
+                                        margin-bottom: 0;
+                                    }
 
 
 
@@ -1081,7 +1141,8 @@
                                 display: flex;
                                 align-items: center;
                                 margin-bottom: 40px;
-                                padding-bottom: 19px;
+                                padding-top: 8px;
+
 
                             }
 
@@ -1090,6 +1151,7 @@
                                 display: flex;
                                 justify-content: space-between;
                                 align-items: center;
+
 
                                 span {
 
@@ -1129,13 +1191,15 @@
                 display: flex;
                 width: 33%;
                 flex-direction: column;
-                border-radius: 8px 8px 8px 8px;
+                border: 1px;
+
 
 
 
                 .wrapp2-image {
 
                     position: relative;
+                    border-radius: 8px 8px 0px 0px;
 
                     img {
                         height: 100%;
@@ -1145,15 +1209,16 @@
                     span {
                         background-color: $primary-color;
                         color: $secondary-color;
-                        width: 95px;
-                        height: 30px;
+                        width: 90px;
+                        height: 18px;
                         border: none;
-                        border-radius: 4px;
+                        border-radius: 0px 4px 4px 0px;
                         left: 0;
                         top: 20px;
                         position: absolute;
                         display: flex;
                         justify-content: center;
+                        align-items: center;
 
 
 
@@ -1173,6 +1238,7 @@
                     height: 100%;
                     background-color: $tertiary-color;
                     color: $secondary-color;
+                    border-radius: 0px 0px 8px 8px;
 
                     .style-wrapper {
                         padding-left: 30px;
@@ -1229,7 +1295,7 @@
                                 display: flex;
                                 justify-content: space-between;
                                 align-items: center;
-                                margin-top: $smallest-sizing;
+
 
                                 span {
 
@@ -1269,15 +1335,16 @@
                 display: flex;
                 width: 30%;
                 flex-direction: column;
-                background-color: $tertiary-color;
-                border-radius: 8px 8px 8px 8px;
-                height: 100%;
+                border: 1px;
+
+
 
 
 
                 .wrapp3-image {
 
                     position: relative;
+                    border-radius: 8px 8px 0px 0px;
 
                     img {
                         height: 100%;
@@ -1287,15 +1354,16 @@
                     span {
                         background-color: $primary-color;
                         color: $secondary-color;
-                        width: 95px;
-                        height: 30px;
+                        width: 90px;
+                        height: 18px;
                         border: none;
-                        border-radius: 4px;
+                        border-radius: 0px 4px 4px 0px;
                         left: 0;
                         top: 20px;
                         position: absolute;
                         display: flex;
                         justify-content: center;
+                        align-items: center;
 
 
 
@@ -1315,6 +1383,7 @@
                     height: 100%;
                     background-color: $tertiary-color;
                     color: $secondary-color;
+                    border-radius: 0px 0px 8px 8px;
 
                     .style-wrapper {
                         padding-left: 30px;
@@ -1371,7 +1440,7 @@
                                 display: flex;
                                 justify-content: space-between;
                                 align-items: center;
-                                margin-top: $smallest-sizing;
+
 
                                 span {
 
@@ -1412,15 +1481,16 @@
                 display: flex;
                 width: 33%;
                 flex-direction: column;
-                background-color: $tertiary-color;
-                border-radius: 8px 8px 8px 8px;
-                height: 100%;
+                border: 1px;
+
+
 
 
 
                 .wrapp4-image {
                     height: 247px;
                     position: relative;
+                    border-radius: 8px 8px 0px 0px;
 
                     img {
                         height: 100%;
@@ -1430,15 +1500,16 @@
                     span {
                         background-color: $primary-color;
                         color: $secondary-color;
-                        width: 95px;
-                        height: 30px;
+                        width: 90px;
+                        height: 18px;
                         border: none;
-                        border-radius: 4px;
+                        border-radius: 0px 4px 4px 0px;
                         left: 0;
                         top: 20px;
                         position: absolute;
                         display: flex;
                         justify-content: center;
+                        align-items: center;
 
 
 
@@ -1458,6 +1529,7 @@
                     height: 100%;
                     background-color: $tertiary-color;
                     color: $secondary-color;
+                    border-radius: 0px 0px 8px 8px;
 
                     .style-wrapper {
                         padding-left: 30px;
@@ -1514,7 +1586,7 @@
                                 display: flex;
                                 justify-content: space-between;
                                 align-items: center;
-                                margin-top: $smallest-sizing;
+
 
                                 span {
 
@@ -1555,15 +1627,16 @@
                 display: flex;
                 width: 33%;
                 flex-direction: column;
-                background-color: $tertiary-color;
-                border-radius: 8px 8px 8px 8px;
-                height: 100%;
+                border: 1px;
+
+
 
 
 
                 .wrapp5-image {
                     height: 247px;
                     position: relative;
+                    border-radius: 8px 8px 0px 0px;
 
                     img {
                         height: 100%;
@@ -1573,15 +1646,16 @@
                     span {
                         background-color: $primary-color;
                         color: $secondary-color;
-                        width: 95px;
-                        height: 30px;
+                        width: 90px;
+                        height: 18px;
                         border: none;
-                        border-radius: 4px;
+                        border-radius: 0px 4px 4px 0px;
                         left: 0;
                         top: 20px;
                         position: absolute;
                         display: flex;
                         justify-content: center;
+                        align-items: center;
 
 
 
@@ -1601,6 +1675,7 @@
                     height: 100%;
                     background-color: $tertiary-color;
                     color: $secondary-color;
+                    border-radius: 0px 0px 8px 8px;
 
                     .style-wrapper {
                         padding-left: 30px;
@@ -1657,7 +1732,7 @@
                                 display: flex;
                                 justify-content: space-between;
                                 align-items: center;
-                                margin-top: $smallest-sizing;
+
 
                                 span {
 
@@ -1702,7 +1777,7 @@
 .guest-review-section {
     width: 100%;
     height: 100%;
-    padding-bottom: $largest-sizing;
+    padding-bottom: calc($extralarge-sizing + 6px);
 
     .guest-wrapper {
         display: flex;
@@ -1750,12 +1825,12 @@
             .holder {
                 background-color: $secondary-color;
                 width: 73%;
-                height: 280px;
+                height: 234px;
                 display: flex;
                 justify-content: center;
                 align-items: center;
                 flex-direction: column;
-                padding-bottom: 20px;
+                padding-bottom: 40px;
                 position: relative;
 
                 .wrapp-review {
@@ -1783,16 +1858,39 @@
                         justify-content: center;
                         align-items: center;
                         position: relative;
-                        top: -25px;
+                        top: 30px;
 
-                        p {
-                            margin-top: 0;
+                        p:nth-of-type(1) {
+                            font-family: 'Mulish';
+                            font-style: normal;
+                            margin-bottom: 0;
+                            font-weight: 700;
+                            font-size: 12px;
+                            line-height: 15px;
+                            /* identical to box height */
+
+
+                            color: #EC1F46;
                         }
+
+                        p:nth-of-type(2) {
+                            margin-bottom: 2px;
+                            font-family: 'Mulish';
+                            font-style: normal;
+                            font-weight: 400;
+                            font-size: 10px;
+                            line-height: 13px;
+                        }
+
+
                     }
 
                     .review-paragraph {
                         width: 80%;
                         position: relative;
+                        height: 114px;
+                        padding-bottom: 80px;
+                        padding-top: 60px;
 
                         img:nth-of-type(1) {
                             position: absolute;
@@ -1890,7 +1988,7 @@
                 color: $header-color !important;
                 background-color: $secondary-color !important;
                 border: none !important;
-                border-radius: 4px !important;
+                border-radius: 4px 0px 0px 4px !important;
                 padding: 20px !important;
 
                 font-family: 'Mulish';
@@ -1898,6 +1996,11 @@
                 font-weight: 300;
                 font-size: 14px;
                 line-height: 18px;
+
+
+                /* Gray 4 */
+
+                color: $footer-text-color;
 
             }
 
@@ -1927,9 +2030,11 @@
     width: 100%;
     height: 100%;
     margin-bottom: 80px;
-    padding-top: 20px;
+
 
     .activities-wrapp {
+        margin-top: 60px;
+
         .activities-heading {
             h3 {
                 font-family: 'Mulish';
@@ -1944,6 +2049,7 @@
             display: flex;
             justify-content: space-between;
             width: 100%;
+            margin-top: 73px;
 
             .card1 {
                 height: 255px;
@@ -2045,7 +2151,7 @@
                 span {
 
                     padding-left: 30px;
-                    margin-top: 65px;
+                    margin-top: 85px;
 
                     h4 {
                         color: $secondary-color;
@@ -2245,6 +2351,18 @@
                     background-color: $secondary-color;
                     border-radius: 4px;
                     padding-left: 20px;
+                    border: none;
+                    font-family: 'Mulish';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 12px;
+                    line-height: 15px;
+                    /* identical to box height */
+
+
+                    /* Gray 4 */
+
+                    color: $footer-text-color;
                 }
 
                 .number-input {
@@ -2263,6 +2381,19 @@
                     width: 100%;
                     height: 123px;
                     padding-left: 20px;
+                    border-radius: 4px;
+                    border: none;
+                    font-family: 'Mulish';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 12px;
+                    line-height: 15px;
+                    /* identical to box height */
+
+
+                    /* Gray 4 */
+
+                    color: $footer-text-color;
 
                 }
             }

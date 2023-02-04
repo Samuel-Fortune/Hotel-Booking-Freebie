@@ -244,6 +244,7 @@
             display: flex;
             align-items: center;
             justify-content: center;
+            border-radius: 3px;
 
             p {
 
@@ -1178,6 +1179,11 @@
                                     height: 40px;
                                     border: none;
                                     border-radius: 4px;
+                                    font-family: 'Nunito';
+                                    font-style: normal;
+                                    font-weight: 600;
+                                    font-size: 14px;
+                                    line-height: 19px;
                                 }
                             }
                         }
@@ -1227,6 +1233,11 @@
                             display: flex;
                             align-items: center;
                             justify-content: center;
+                            font-family: 'Mulish';
+                            font-style: normal;
+                            font-weight: 600;
+                            font-size: 8px;
+                            line-height: 10px;
                         }
                     }
                 }
@@ -1321,6 +1332,11 @@
                                     height: 40px;
                                     border: none;
                                     border-radius: 4px;
+                                    font-family: 'Nunito';
+                                    font-style: normal;
+                                    font-weight: 600;
+                                    font-size: 14px;
+                                    line-height: 19px;
                                 }
                             }
                         }
@@ -1372,6 +1388,11 @@
                             display: flex;
                             align-items: center;
                             justify-content: center;
+                            font-family: 'Mulish';
+                            font-style: normal;
+                            font-weight: 600;
+                            font-size: 8px;
+                            line-height: 10px;
                         }
                     }
                 }
@@ -1466,6 +1487,11 @@
                                     height: 40px;
                                     border: none;
                                     border-radius: 4px;
+                                    font-family: 'Nunito';
+                                    font-style: normal;
+                                    font-weight: 600;
+                                    font-size: 14px;
+                                    line-height: 19px;
                                 }
                             }
                         }
@@ -1518,6 +1544,11 @@
                             display: flex;
                             align-items: center;
                             justify-content: center;
+                            font-family: 'Mulish';
+                            font-style: normal;
+                            font-weight: 600;
+                            font-size: 8px;
+                            line-height: 10px;
                         }
                     }
                 }
@@ -1612,6 +1643,11 @@
                                     height: 40px;
                                     border: none;
                                     border-radius: 4px;
+                                    font-family: 'Nunito';
+                                    font-style: normal;
+                                    font-weight: 600;
+                                    font-size: 14px;
+                                    line-height: 19px;
                                 }
                             }
                         }
@@ -1664,6 +1700,11 @@
                             display: flex;
                             align-items: center;
                             justify-content: center;
+                            font-family: 'Mulish';
+                            font-style: normal;
+                            font-weight: 600;
+                            font-size: 8px;
+                            line-height: 10px;
                         }
                     }
                 }
@@ -1758,6 +1799,11 @@
                                     height: 40px;
                                     border: none;
                                     border-radius: 4px;
+                                    font-family: 'Nunito';
+                                    font-style: normal;
+                                    font-weight: 600;
+                                    font-size: 14px;
+                                    line-height: 19px;
                                 }
                             }
                         }
@@ -1874,11 +1920,12 @@
                         }
 
                         p:nth-of-type(2) {
-                            margin-bottom: 2px;
+                            margin-bottom: 5px;
+                            margin-top: $smallest-sizing;
                             font-family: 'Mulish';
                             font-style: normal;
                             font-weight: 400;
-                            font-size: 10px;
+                            font-size: $smallest-sizing;
                             line-height: 13px;
                         }
 
@@ -1894,14 +1941,14 @@
 
                         img:nth-of-type(1) {
                             position: absolute;
-                            top: -120px;
+                            top: -47px;
                             left: -40px;
                         }
 
                         img:nth-of-type(2) {
                             position: relative;
                             left: 490px;
-                            top: -147px;
+                            top: -156px;
                         }
 
 
@@ -1996,6 +2043,8 @@
                 font-weight: 300;
                 font-size: 14px;
                 line-height: 18px;
+                height: 55px;
+
 
 
                 /* Gray 4 */
@@ -2087,6 +2136,12 @@
                         height: 30px;
                         border-radius: 4px;
                         border: none;
+                        font-family: 'Nunito';
+                        font-style: normal;
+                        font-weight: 600;
+                        font-size: 12px;
+                        line-height: 16px;
+
                     }
                 }
 
@@ -2131,6 +2186,12 @@
                         height: 30px;
                         border-radius: 4px;
                         border: none;
+                        font-family: 'Nunito';
+                        font-style: normal;
+                        font-weight: 600;
+                        font-size: 12px;
+                        line-height: 16px;
+
                     }
                 }
 
@@ -2172,6 +2233,12 @@
                         height: 30px;
                         border-radius: 4px;
                         border: none;
+                        font-family: 'Nunito';
+                        font-style: normal;
+                        font-weight: 600;
+                        font-size: 12px;
+                        line-height: 16px;
+
                     }
                 }
 
@@ -2214,6 +2281,12 @@
                         height: 30px;
                         border-radius: 4px;
                         border: none;
+                        font-family: 'Nunito';
+                        font-style: normal;
+                        font-weight: 600;
+                        font-size: 12px;
+                        line-height: 16px;
+
                     }
                 }
 
@@ -2296,6 +2369,8 @@
                 h4 {
                     color: $secondary-color;
 
+
+
                     p {
                         a {
                             color: $footer-text-color;
@@ -2306,17 +2381,38 @@
         }
 
         span {
+
+
             p {
                 color: $footer-text-color;
                 display: flex;
-                align-items: center;
+                // align-items: center;
+
+
 
                 img {
+                    height: 24px;
 
                     a {
                         color: $footer-text-color;
                     }
                 }
+            }
+
+            p:nth-of-type(2) {
+                display: flex;
+
+
+                img {
+
+
+                    a {
+
+                        display: flex;
+                        color: #EC1F46;
+                    }
+                }
+
             }
         }
     }
@@ -2393,7 +2489,8 @@
 
                     /* Gray 4 */
 
-                    color: $footer-text-color;
+                    color: $header-color;
+
 
                 }
             }
@@ -2402,6 +2499,7 @@
                 display: flex;
                 width: 100%;
                 justify-content: space-between;
+                align-items: center;
 
                 button {
 
@@ -2411,6 +2509,11 @@
                     height: 50px;
                     border-radius: 4px;
                     border: none;
+                    font-family: 'Mulish';
+                    font-style: normal;
+                    font-weight: 700;
+                    font-size: $smaller-sizing;
+                    line-height: 15px;
                 }
 
                 p {
@@ -2446,6 +2549,12 @@
         span {
             display: flex;
             justify-content: flex-end;
+
+            img {
+                max-width: 136px;
+                height: auto;
+                object-fit: contain;
+            }
         }
 
     }

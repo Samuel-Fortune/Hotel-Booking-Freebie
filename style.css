@@ -284,6 +284,7 @@ $breakpoint arguments choices:
   display: flex;
   align-items: center;
   justify-content: center;
+  border-radius: 3px;
 }
 .hotel-wrapper .hilton-section span p {
   font-weight: 600;
@@ -965,6 +966,11 @@ $breakpoint arguments choices:
   height: 40px;
   border: none;
   border-radius: 4px;
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 19px;
 }
 .other-packages-section .other-package-wrapper .trip-advisor-wrapper .wrapp2 {
   display: flex;
@@ -999,6 +1005,11 @@ $breakpoint arguments choices:
   display: flex;
   align-items: center;
   justify-content: center;
+  font-family: "Mulish";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 8px;
+  line-height: 10px;
 }
 .other-packages-section .other-package-wrapper .trip-advisor-wrapper .wrapp2 .advisor-style2 {
   width: 100%;
@@ -1061,6 +1072,11 @@ $breakpoint arguments choices:
   height: 40px;
   border: none;
   border-radius: 4px;
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 19px;
 }
 .other-packages-section .other-package-wrapper .trip-advisor-wrapper .wrapp3 {
   display: flex;
@@ -1095,6 +1111,11 @@ $breakpoint arguments choices:
   display: flex;
   align-items: center;
   justify-content: center;
+  font-family: "Mulish";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 8px;
+  line-height: 10px;
 }
 .other-packages-section .other-package-wrapper .trip-advisor-wrapper .wrapp3 .advisor-style3 {
   width: 100%;
@@ -1157,6 +1178,11 @@ $breakpoint arguments choices:
   height: 40px;
   border: none;
   border-radius: 4px;
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 19px;
 }
 .other-packages-section .other-package-wrapper .trip-advisor-wrapper .wrapp4 {
   display: flex;
@@ -1192,6 +1218,11 @@ $breakpoint arguments choices:
   display: flex;
   align-items: center;
   justify-content: center;
+  font-family: "Mulish";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 8px;
+  line-height: 10px;
 }
 .other-packages-section .other-package-wrapper .trip-advisor-wrapper .wrapp4 .advisor-style4 {
   width: 100%;
@@ -1254,6 +1285,11 @@ $breakpoint arguments choices:
   height: 40px;
   border: none;
   border-radius: 4px;
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 19px;
 }
 .other-packages-section .other-package-wrapper .trip-advisor-wrapper .wrapp5 {
   display: flex;
@@ -1289,6 +1325,11 @@ $breakpoint arguments choices:
   display: flex;
   align-items: center;
   justify-content: center;
+  font-family: "Mulish";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 8px;
+  line-height: 10px;
 }
 .other-packages-section .other-package-wrapper .trip-advisor-wrapper .wrapp5 .advisor-style5 {
   width: 100%;
@@ -1351,6 +1392,11 @@ $breakpoint arguments choices:
   height: 40px;
   border: none;
   border-radius: 4px;
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 19px;
 }
 
 .guest-review-section {
@@ -1441,7 +1487,8 @@ $breakpoint arguments choices:
   color: #EC1F46;
 }
 .guest-review-section .guest-wrapper .guest-card-style .holder .wrapp-review .Ellipse-container p:nth-of-type(2) {
-  margin-bottom: 2px;
+  margin-bottom: 5px;
+  margin-top: 10px;
   font-family: "Mulish";
   font-style: normal;
   font-weight: 400;
@@ -1457,13 +1504,13 @@ $breakpoint arguments choices:
 }
 .guest-review-section .guest-wrapper .guest-card-style .holder .wrapp-review .review-paragraph img:nth-of-type(1) {
   position: absolute;
-  top: -120px;
+  top: -47px;
   left: -40px;
 }
 .guest-review-section .guest-wrapper .guest-card-style .holder .wrapp-review .review-paragraph img:nth-of-type(2) {
   position: relative;
   left: 490px;
-  top: -147px;
+  top: -156px;
 }
 .guest-review-section .guest-wrapper .guest-card-style .holder .wrapp-review .review-paragraph p {
   margin-top: 0;
@@ -1525,6 +1572,7 @@ $breakpoint arguments choices:
   font-weight: 300;
   font-size: 14px;
   line-height: 18px;
+  height: 55px;
   /* Gray 4 */
   color: #BDBDBD;
 }
@@ -1596,6 +1644,11 @@ $breakpoint arguments choices:
   height: 30px;
   border-radius: 4px;
   border: none;
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 16px;
 }
 .activities-section .activities-wrapp .activities-cards .card2 {
   height: 255px;
@@ -1629,6 +1682,11 @@ $breakpoint arguments choices:
   height: 30px;
   border-radius: 4px;
   border: none;
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 16px;
 }
 .activities-section .activities-wrapp .activities-cards .card3 {
   height: 255px;
@@ -1662,6 +1720,11 @@ $breakpoint arguments choices:
   height: 30px;
   border-radius: 4px;
   border: none;
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 16px;
 }
 .activities-section .activities-wrapp .activities-cards .card4 {
   height: 255px;
@@ -1695,6 +1758,11 @@ $breakpoint arguments choices:
   height: 30px;
   border-radius: 4px;
   border: none;
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 16px;
 }
 
 .footer-section {
@@ -1757,10 +1825,19 @@ $breakpoint arguments choices:
 .footer-section .contact-section span p {
   color: #BDBDBD;
   display: flex;
-  align-items: center;
+}
+.footer-section .contact-section span p img {
+  height: 24px;
 }
 .footer-section .contact-section span p img a {
   color: #BDBDBD;
+}
+.footer-section .contact-section span p:nth-of-type(2) {
+  display: flex;
+}
+.footer-section .contact-section span p:nth-of-type(2) img a {
+  display: flex;
+  color: #EC1F46;
 }
 .footer-section .contact-form-section {
   display: flex;
@@ -1816,12 +1893,13 @@ $breakpoint arguments choices:
   line-height: 15px;
   /* identical to box height */
   /* Gray 4 */
-  color: #BDBDBD;
+  color: #333333;
 }
 .footer-section .contact-form-section .contact-form .submit-button {
   display: flex;
   width: 100%;
   justify-content: space-between;
+  align-items: center;
 }
 .footer-section .contact-form-section .contact-form .submit-button button {
   background-color: #EC1F46;
@@ -1830,6 +1908,11 @@ $breakpoint arguments choices:
   height: 50px;
   border-radius: 4px;
   border: none;
+  font-family: "Mulish";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 15px;
 }
 .footer-section .contact-form-section .contact-form .submit-button p {
   color: #FFFFFF;
@@ -1853,4 +1936,9 @@ $breakpoint arguments choices:
 .footer-section .last-section span {
   display: flex;
   justify-content: flex-end;
+}
+.footer-section .last-section span img {
+  max-width: 136px;
+  height: auto;
+  object-fit: contain;
 }

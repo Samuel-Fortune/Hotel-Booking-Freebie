@@ -1942,3 +1942,14 @@ $breakpoint arguments choices:
   height: auto;
   object-fit: contain;
 }
+
+.menu-normal {
+  display: none;
+}
+.menu-large {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+  align-items: center;
+  width: 18%;
+}

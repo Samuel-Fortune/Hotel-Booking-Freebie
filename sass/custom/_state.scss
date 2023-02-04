@@ -1,15 +1,29 @@
-// .menu {
+.menu {
 
-//     &-normal {
+    &-normal {
 
-//         // height: 150vh;
-//         display: flex;
-//         @include respond(sm) {
-//             display: none;
+        // height: 150vh;
 
-//         }
-//     }
-// }
+        display: none;
+        @include respond(sm) {
+
+        }
+    }
+
+    &-large {
+        // height: 150vh;
+
+        display: flex;
+        justify-content: space-between;
+        gap: 30px;
+        align-items: center;
+        width: 18%;
+        @include respond(md) {
+          
+
+        }
+    }
+}
 
 // .slider {
 //     display: flex;
@@ -23,5 +37,5 @@
 //         }
 //     }
 
-   
+
 // }

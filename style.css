@@ -221,6 +221,24 @@ $breakpoint arguments choices:
   display: flex;
   width: 100%;
 }
+.nav-bottom .nav-buttom-list .list-menu {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  width: 100%;
+}
+.nav-bottom .nav-buttom-list .list-menu li {
+  display: flex;
+}
+.nav-bottom .nav-buttom-list .list-menu li a {
+  font-family: "Mulish";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 18px;
+  /* identical to box height */
+  text-transform: uppercase;
+}
 
 .bread-crumb {
   width: 100%;
@@ -1944,12 +1962,222 @@ $breakpoint arguments choices:
 }
 
 .menu-normal {
-  display: none;
-}
-.menu-large {
   display: flex;
-  justify-content: space-between;
   gap: 30px;
   align-items: center;
-  width: 18%;
+  width: 100%;
+  justify-content: center;
+}
+.nav-bg-normal {
+  display: none;
+}
+.search-input-normal {
+  width: 250px;
+  height: 40px;
+  padding-left: 20px;
+  color: #333333;
+  background-color: #F5FAFE;
+  border-radius: 6px;
+  border: none;
+}
+.logo-search-normal {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  gap: 10px;
+  align-items: center;
+  flex-direction: column;
+}
+.best-tour-plan-normal {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+.nav-buttom-list-normal {
+  overflow-x: scroll;
+  width: 100%;
+}
+.nav-buttom-list-normal .list-menu {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+}
+.nav-buttom-list-normal .list-menu li {
+  display: flex;
+}
+.nav-buttom-list-normal .list-menu li a {
+  font-family: "Mulish";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 9px;
+  line-height: 18px;
+  /* identical to box height */
+  text-transform: uppercase;
+}
+.slider-normal {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  flex-direction: column;
+  gap: 20px;
+}
+.slider-normal .beach {
+  background: linear-gradient(180deg, rgba(0, 122, 223, 0.48) 0%, rgba(255, 255, 255, 0.128) 100%);
+  border-radius: 8px;
+  width: 99%;
+}
+.slider-normal .beach img {
+  width: 100%;
+}
+.slider-normal .column-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+  gap: 20px;
+}
+.package-menu-normal {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  overflow-x: scroll;
+}
+.package-menu-normal p:first-of-type {
+  color: #EC1F46 !important;
+}
+.package-menu-normal p:first-of-type a:first-of-type {
+  color: #EC1F46 !important;
+  border-bottom: 3px solid;
+  padding-bottom: 2px;
+  height: 30px;
+  display: flex;
+}
+.package-menu-normal p {
+  color: #333333;
+  font-family: "Mulish";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 8px;
+  line-height: 18px;
+  height: 30px;
+}
+.package-offer-normal {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+  gap: 20px;
+}
+.package-offer-normal .package-card1 {
+  width: 100%;
+  background-color: #FFFFFF;
+}
+.package-offer-normal .package-card1 .highlight-header {
+  background-color: #0A223D;
+  width: 100%;
+  display: flex;
+  color: #fff;
+  border-radius: 4px 4px 0px 0px;
+  align-items: center;
+}
+.package-offer-normal .package-card1 .highlight-header h5 {
+  margin-left: 20px;
+  font-family: "Mulish";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 18px;
+}
+.package-offer-normal .package-card1 .card-highlight, .package-offer-normal .package-card1 .package-section .package-contianer .package-summery .package-card-details .card-head .card-Details, .package-section .package-contianer .package-summery .package-card-details .card-head .package-offer-normal .package-card1 .card-Details {
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+  height: 96px;
+  margin-left: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.package-offer-normal .package-card1 .card-highlight .card1 p, .package-offer-normal .package-card1 .package-section .package-contianer .package-summery .package-card-details .card-head .card-Details .card1 p, .package-section .package-contianer .package-summery .package-card-details .card-head .package-offer-normal .package-card1 .card-Details .card1 p,
+.package-offer-normal .package-card1 .card-highlight .card2 p,
+.package-offer-normal .package-card1 .package-section .package-contianer .package-summery .package-card-details .card-head .card-Details .card2 p,
+.package-section .package-contianer .package-summery .package-card-details .card-head .package-offer-normal .package-card1 .card-Details .card2 p {
+  display: flex;
+  align-items: center;
+  font-family: "Mulish";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 15px;
+  color: #333333;
+}
+.package-offer-normal .package-card2 {
+  width: 100%;
+  background-color: #FFFFFF;
+}
+.package-offer-normal .package-card2 .details-header,
+.package-offer-normal .package-card2 .card-head {
+  background-color: #0A223D;
+  width: 100%;
+  display: flex;
+  color: #fff;
+  border-radius: 4px 4px 0px 0px;
+  align-items: center;
+}
+.package-offer-normal .package-card2 .details-header h5,
+.package-offer-normal .package-card2 .card-head h5 {
+  margin-left: 20px;
+  font-family: "Mulish";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 18px;
+}
+.package-offer-normal .package-card2 .card-Details {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-bottom: 0px !important;
+}
+.package-offer-normal .package-card2 .card-Details .card1 {
+  display: flex;
+  justify-content: center;
+}
+.package-offer-normal .package-card2 .card-Details .card1 .design {
+  display: flex;
+  flex-direction: column;
+  height: 103px;
+  width: 168px;
+  justify-content: space-between;
+}
+.package-offer-normal .package-card2 .card-Details .card1 .design p {
+  margin: 0;
+  font-family: "Mulish";
+  font-style: normal;
+  font-weight: 400;
+  line-height: 15px;
+}
+.package-offer-normal .package-card2 .card-Details .card2 {
+  display: flex;
+  width: 50%;
+  height: 18px;
+}
+.package-offer-normal .package-card2 .card-Details .card2 p {
+  margin-top: 0;
+  font-family: "Mulish";
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+.package-card-details-normal {
+  width: 100%;
+  background-color: #FFFFFF;
+  height: 40rem;
+  padding-bottom: 24px;
 }

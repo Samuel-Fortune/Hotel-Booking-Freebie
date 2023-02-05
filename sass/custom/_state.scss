@@ -4,24 +4,370 @@
 
         // height: 150vh;
 
-        display: none;
-        @include respond(sm) {
+        display: flex;
+        gap: 30px;
+        align-items: center;
+        width: 100%;
+        justify-content: center;
 
-        }
+        @include respond(sm) {}
     }
 
-    &-large {
+    // &-large {
+    //     // height: 150vh;
+
+    //     display: flex;
+    //     justify-content: space-between;
+    //     gap: 30px;
+    //     align-items: center;
+    //     width: 18%;
+
+    // }
+    //     @include respond(md) {}
+}
+
+.nav-bg {
+
+
+    &-normal {
+
         // height: 150vh;
+
+        display: none;
+
+        @include respond(sm) {}
+    }
+
+
+}
+
+
+
+.search-input {
+
+    &-normal {
+
+        width: 250px;
+        height: calc($largest-sizing + 4px);
+        padding-left: $Large-sizing + 2px;
+        color: $header-color;
+        background-color: $main-bg-color;
+        border-radius: calc($smallest-sizing - 4px);
+        border: none;
+
+        @include respond(sm) {}
+    }
+}
+
+
+.logo-search {
+    &-normal {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        gap: 10px;
+        align-items: center;
+        flex-direction: column;
+
+
+
+
+        @include respond(sm) {}
+    }
+
+}
+
+.best-tour-plan {
+    &-normal {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        flex-direction: column;
+
+        @include respond(sm) {}
+    }
+}
+
+.nav-buttom-list {
+    &-normal {
+        overflow-x: scroll;
+        width: 100%;
+
+        .list-menu {
+            display: flex;
+            justify-content: space-between;
+            flex-direction: row;
+
+
+            li {
+                display: flex;
+
+
+                a {
+                    font-family: 'Mulish';
+                    font-style: normal;
+                    font-weight: 700;
+                    font-size: 9px;
+                    line-height: 18px;
+                    /* identical to box height */
+
+                    text-transform: uppercase;
+
+                }
+            }
+        }
+
+        @include respond(sm) {}
+    }
+
+}
+
+.slider {
+
+    &-normal {
 
         display: flex;
         justify-content: space-between;
-        gap: 30px;
-        align-items: center;
-        width: 18%;
-        @include respond(md) {
-          
+        width: 100%;
+        flex-direction: column;
+        gap: 20px;
+
+        .beach {
+
+            background: linear-gradient(180deg, rgba(0, 122, 223, 0.48) 0%, rgba(255, 255, 255, 0.128) 100%);
+            border-radius: calc($smallest-sizing - 2px);
+            width: 99%;
+
+            img {
+                width: 100%;
+            }
+        }
+
+        .column-wrapper {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            width: 100%;
+            gap: 20px;
+        }
+
+        @include respond(sm) {}
+    }
+}
+
+.package-menu {
+
+    &-normal {
+        display: flex;
+        justify-content: space-between;
+        width: 100%; // set a fixed width for the menu
+        overflow-x: scroll;
+
+
+        p:first-of-type {
+
+            color: $primary-color !important;
+
+
+            a:first-of-type {
+                color: $primary-color !important;
+                border-bottom: 3px solid;
+                padding-bottom: 2px;
+                height: 30px;
+                display: flex;
+            }
+        }
+
+
+        p {
+
+
+
+            color: $header-color;
+            font-family: 'Mulish';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 8px;
+            line-height: $Large-sizing;
+            height: 30px;
+
 
         }
+
+        @include respond(sm) {}
+    }
+}
+
+.package-offer {
+
+    &-normal {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 100%;
+        gap: 20px;
+
+        .package-card1 {
+            width: 100%;
+            background-color: $secondary-color;
+
+
+            .highlight-header {
+                background-color: $tertiary-color;
+                width: 100%;
+                display: flex;
+                color: #fff;
+                border-radius: 4px 4px 0px 0px;
+                align-items: center;
+
+                h5 {
+                    margin-left: calc($larger-sizing - 4px);
+
+                    font-family: 'Mulish';
+                    font-style: normal;
+                    font-weight: 700;
+                    font-size: $medium-sizing;
+                    line-height: $Large-sizing;
+                }
+
+
+
+
+
+            }
+
+            .card-highlight {
+                display: flex;
+                justify-content: space-between;
+                width: 90%;
+                height: 96px;
+                margin-left: calc($larger-sizing - 4px);
+                padding-top: calc($larger-sizing - 4px);
+                padding-bottom: calc($larger-sizing - 4px);
+
+                .card1,
+                .card2 {
+                    p {
+                        display: flex;
+                        align-items: center;
+                        font-family: 'Mulish';
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: $smaller-sizing;
+                        line-height: calc($medium-sizing + 1px);
+                        color: $header-color;
+                    }
+                }
+
+
+            }
+        }
+
+
+        //
+
+        .package-card2 {
+            width: 100%;
+            background-color: $secondary-color;
+
+
+            .details-header,
+            .card-head {
+                background-color: $tertiary-color;
+                width: 100%;
+                display: flex;
+
+                color: #fff;
+                border-radius: 4px 4px 0px 0px;
+                align-items: center;
+
+                h5 {
+                    margin-left: calc($larger-sizing - 4px);
+                    font-family: 'Mulish';
+                    font-style: normal;
+                    font-weight: 700;
+                    font-size: $medium-sizing;
+                    line-height: $Large-sizing;
+                }
+
+
+
+
+
+            }
+
+            .card-Details {
+                display: flex;
+                justify-content: space-between;
+                margin-left: calc($larger-sizing - 4px);
+                padding-top: calc($larger-sizing - 4px);
+                padding-bottom: calc($larger-sizing - 4px);
+                padding-bottom: 0px !important;
+
+                .card1 {
+
+
+                    display: flex;
+                    justify-content: center;
+
+                    .design {
+                        display: flex;
+                        flex-direction: column;
+                        height: 103px;
+                        width: 168px;
+                        justify-content: space-between;
+
+                        p {
+                            margin: 0;
+                            font-family: 'Mulish';
+                            font-style: normal;
+                            font-weight: 400;
+                            line-height: 15px;
+                        }
+                    }
+
+                }
+
+                .card2 {
+                    display: flex;
+                    width: 50%;
+                    height: 18px;
+
+
+                    p {
+                        margin-top: 0;
+
+                        font-family: 'Mulish';
+                        font-weight: 400;
+                        font-size: $medium-sizing;
+                        line-height: $Large-sizing;
+                        height: 100%;
+                        display: flex;
+                        align-items: center;
+
+                    }
+
+                }
+
+
+            }
+        }
+
+        @include respond(sm) {}
+    }
+}
+
+.package-card-details {
+    &-normal {
+        width: 100%;
+        background-color: $secondary-color;
+        height: 40rem;
+        padding-bottom: $larger-sizing;
+
+        
+
+        @include respond(sm) {}
     }
 }
 

@@ -48,6 +48,26 @@ document.addEventListener("DOMContentLoaded", function () {
         document.getElementById("package-card-details").classList.add("package-card-details-normal");
         document.getElementById("package-card-details").classList.remove("package-card-details");
 
+        //Apply this style to my other package section wrapp1
+        document.getElementById("trip-advisor-wrapper").classList.add("trip-advisor-wrapper-normal");
+        document.getElementById("trip-advisor-wrapper").classList.remove("trip-advisor-wrapper");
+
+        //Apply this style to my guest review section
+        document.getElementById("guest-review-section").classList.add("guest-review-section-normal");
+        document.getElementById("guest-review-section").classList.remove("guest-review-section");
+
+        //Apply this style to my news section
+        document.getElementById("newsletter-section").classList.add("newsletter-section-normal");
+        document.getElementById("newsletter-section").classList.remove("newsletter-section");
+
+        //Apply this style to my activities-section
+        document.getElementById("activities-section").classList.add("activities-section-normal");
+        document.getElementById("activities-section").classList.add("activities-section");
+
+        //Apply this style for my footer section
+        document.getElementById("footer-section").classList.add("footer-section-normal");
+        document.getElementById("footer-section").classList.remove("footer-section");
+
 
 
     } else if (viewportWidth >= 768 && viewportWidth < 992) {
@@ -82,6 +102,21 @@ document.addEventListener("DOMContentLoaded", function () {
 
         //Apply this style to my package-card-details
         document.getElementById("package-card-details").classList.remove("package-card-details-normal");
+
+        //Apply this style to my other package section wrapp1
+        document.getElementById("trip-advisor-wrapper").classList.remove("trip-advisor-wrapper-normal");
+
+        //Apply this style to my guest review section
+        document.getElementById("").classList.remove("guest-review-section-normal");
+
+        //Apply this style to my newsletter section
+        document.getElementById("newsletter-section").classList.remove("newsletter-section-normal");
+
+        //Apply this style to my activities-section
+        document.getElementById("activities-section").classList.remove("activities-section-normal");
+
+        //Apply thiis style to my footer section
+        document.getElementById("footer-section").classList.remove("footer-section-normal");
 
     } else {
         // Apply styles for large screens

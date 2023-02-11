@@ -208,14 +208,17 @@ $breakpoint arguments choices:
 .nav-main .menu {
   display: flex;
   justify-content: space-between;
-  gap: 30px;
   align-items: center;
-  width: 18%;
+}
+.nav-main .menu .profile {
+  display: flex;
+  padding-left: 20px;
+  gap: 20px;
 }
 
 .nav-bottom {
   background-color: #0A223D;
-  width: 100%;
+  margin-top: 3px;
 }
 .nav-bottom .nav-buttom-list {
   display: flex;
@@ -1967,10 +1970,14 @@ $breakpoint arguments choices:
 
 .menu-normal {
   display: flex;
-  gap: 30px;
   align-items: center;
   width: 100%;
   justify-content: center;
+}
+.menu-normal .profile {
+  display: flex;
+  gap: 10px;
+  padding-left: 10px;
 }
 .site-wrapper-large {
   width: 90%;
@@ -2956,17 +2963,18 @@ $breakpoint arguments choices:
 .trip-advisor-wrapper-normal .wrapp1 {
   display: flex;
   width: 100%;
-  flex-direction: row;
+  flex-direction: column;
   border: 1px;
 }
 .trip-advisor-wrapper-normal .wrapp-image {
-  width: 49%;
+  width: 100%;
   position: relative;
-  border-radius: 8px 0px 0px 8px;
+  height: 55vh;
 }
 .trip-advisor-wrapper-normal .wrapp-image img {
   height: 100%;
   width: 100%;
+  border-radius: 8px 8px 0px 0px;
 }
 .trip-advisor-wrapper-normal .wrapp-image span {
   background-color: #EC1F46;
@@ -2987,10 +2995,10 @@ $breakpoint arguments choices:
   justify-content: center;
 }
 .trip-advisor-wrapper-normal .advisor-style {
-  width: 54%;
+  width: 100%;
   background-color: #0A223D;
   color: #FFFFFF;
-  border-radius: 0px 8px 8px 0px;
+  border-radius: 0px 0px 8px 8px;
 }
 .trip-advisor-wrapper-normal .advisor-style .style-wrapper {
   padding-left: 50px;
@@ -4264,13 +4272,13 @@ $breakpoint arguments choices:
   background-size: cover;
   padding: 94px 0 87px;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 .newsletter-section-normal .news-wrapp {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   align-items: center;
   width: 100%;
   justify-content: center;
@@ -4279,6 +4287,10 @@ $breakpoint arguments choices:
 .newsletter-section-normal .news-wrapp .text {
   width: 100%;
   color: #FFFFFF;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 .newsletter-section-normal .news-wrapp .text span h2 {
   margin-top: 0;

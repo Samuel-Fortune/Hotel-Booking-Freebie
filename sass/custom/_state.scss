@@ -5,10 +5,15 @@
         // height: 150vh;
 
         display: flex;
-        gap: 30px;
         align-items: center;
         width: 100%;
         justify-content: center;
+
+        .profile {
+            display: flex;
+            gap: 10px;
+            padding-left: 10px;
+        }
 
         @include respond(sm) {}
     }
@@ -162,6 +167,7 @@
         @include respond(sm) {}
     }
 }
+
 
 .nav-buttom-list {
     &-normal {
@@ -1436,7 +1442,7 @@
 
             display: flex;
             width: 100%;
-            flex-direction: row;
+            flex-direction: column;
             border: 1px;
         }
 
@@ -1445,13 +1451,15 @@
 
 
         .wrapp-image {
-            width: 49%;
+            width: 100%;
             position: relative;
-            border-radius: 8px 0px 0px 8px;
+            height: 55vh;
+
 
             img {
                 height: 100%;
                 width: 100%;
+                border-radius: 8px 8px 0px 0px;
             }
 
             span {
@@ -1479,10 +1487,10 @@
 
 
         .advisor-style {
-            width: 54%;
+            width: 100%;
             background-color: $tertiary-color;
             color: $secondary-color;
-            border-radius: 0px 8px 8px 0px;
+            border-radius: 0px 0px 8px 8px;
 
             .style-wrapper {
                 padding-left: 50px;
@@ -3319,13 +3327,13 @@
         background-size: cover;
         padding: 94px 0 87px;
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
         justify-content: center;
         align-items: center;
 
         .news-wrapp {
             display: flex;
-            flex-direction: row;
+            flex-direction: column;
             align-items: center;
             width: 100%;
             justify-content: center;
@@ -3335,6 +3343,10 @@
             .text {
                 width: 100%;
                 color: $secondary-color;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
 
                 span {
                     h2 {
